@@ -1,0 +1,20 @@
+package cls;
+
+
+
+
+import dao.AccountDao;
+
+
+public class BalanceClass {
+	public void balance() {
+		AccountDao dao;
+		dao = AccountDao.getInstance();
+		int count = dao.accountBalance();
+		if(count == 1) {
+			System.out.println("출력:");
+		} 
+	}
+	
+	
+}

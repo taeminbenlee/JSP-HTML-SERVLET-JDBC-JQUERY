@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="" name="frm">
+	<div align="center">
+	<strong>라면 타이머</strong>
+	<br><br>
+	<!-- 실시간으로 함수 호출하는것 == onchange -->
+	<select id="selid" name="myChoice" onchange="">
+		<option value="180">원하는 시간을 선택해 주십시오(기본 3분)</option>
+		<option value="300">5분</option>
+		<option value="180">3분</option>
+		<option value="150">2분30초</option>
+		<option value="120">2분</option>
+		<option value="60">1분</option>
+		<option value="30">30초</option>
+	</select>
+	
+	<input type="button" value="Timer Start" onclick="noodle()">
+	<br><br>
+		<!-- span 태그는 별 의미는 없다 그냥 div처럼 담는 것 -->
+	<span id="countdown">time selected</span>	
+	<br><br>
+	<!-- 닫기, 윈두우 기본함수 클로즈 사용 -->
+	<button type="button" onclick="window.close()">close</button>	
+	
+	</div>
+</form>
+
+<script type="text/javascript">
+//계산을 위한 변수 선언및 초기화
+let count = 0;
+let time = 0;
+let choice = 0;
+
+function noodle() {
+	//매번 실행시 타이머 초기화를 위한 함수
+	clearInterval(time);
+	//select의 value 값 가져오기
+	let value = document.getElementById('selid').value;
+	count = value;
+	//alert(value);
+	//다큐먼트 안의 frm아느이 myChoice	
+	choice = document.frm.myChoice.selectedIndex;
+	alert(choice);
+	
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+
+<p id="demo"></p>
+<br>
+<button type="button">클릭</button>
+
+<script type="text/javascript">
+$(function(){
+	
+	$("button").click(function(){
+		
+		$.ajax({
+			url:"data.xml",
+			dataType: "xml",
+			success: function(xml) {
+                $(xml).find('xmldata').each(function(){
+                    $(this).find("news").each(function(){
+                        //var values = $(this).text();
+                        //alert(values);
+                        $("#demo").append($(this).find("aname").text() + "<br>");
+                        $("#demo").append($(this).find("link").text() + "<br>");
+                        $("#demo").append($(this).find("target").text() + "<br>");
+                    });
+                });
+            }
+		})
+		
+		
+		
+	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+})
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

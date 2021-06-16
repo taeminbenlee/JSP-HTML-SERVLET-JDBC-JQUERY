@@ -1,0 +1,89 @@
+package dao;
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import cls.insertClass;
+import cls.selectDateClass;
+
+import dto.accountDto;
+
+
+// Singleton 
+public class AccountDao {	// DB와 대화하는 클래스
+		private static AccountDao dao = null;
+		
+		private AccountDao() {
+			
+		}
+		
+		public static AccountDao getInstance() {
+			if(dao==null) {
+				dao = new AccountDao();
+			}
+			return dao;
+		}
+		Scanner sc = new Scanner (System.in);
+		public void insert() {
+			insertClass ic = new insertClass();
+			//리턴값이 있으니 카운트로 받자
+			
+			accountDto dto = new accountDto();
+			System.out.print("DATE: ");
+			String dateTime = sc.next();
+			dto.setDateTime(dateTime);
+			
+			System.out.print("TITLE: ");
+			String title = sc.next();
+			dto.settitle(title);
+			
+			System.out.print("CLASSIFY: ");
+			String classify = sc.next();
+			dto.setClassify(classify);
+			
+			System.out.print("money: ");
+			int money = sc.nextInt();
+			dto.setMoney(money);
+			
+			System.out.print("memo: ");
+			String memo = sc.next();
+			dto.setMemo(memo);
+			
+			
+			
+			int count = ic.insert(dto);
+			if(count == 1) {
+				System.out.println("데이터가 " + count + "개 추가되었습니다");
+			} else {
+				System.out.println("데이터가 추가되지 않았습니다.");
+			}
+			
+			
+
+		}
+
+			
+			
+			
+		
+		
+		public void delete() {
+			
+		}
+		
+		public void select() {
+			selectDateClass sdc = new selectDateClass();
+			String dateTime = sc.next();
+			
+			ArrayList<accountDto> list = sdc.searchDate(dateTime);
+			for (int i = 0; i < list.size(); i++) {
+				if(list != null) {
+				accountDto d = list.get(i);
+				
+				System.out.println(d.toString());
+				}
+		}
+		
+	}
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#mainscreen{width: 100%; background-color: teal; height: 240px;}
+/*width는 퍼센트로도 할수있지만 height는 픽셀로..줄이거나 늘릴때 화면조정은 margin으로*/
+
+
+</style>
+
+</head>
+<body>
+
+
+<div id="mainscreen">
+main
+</div>
+
+
+</body>
+</html>

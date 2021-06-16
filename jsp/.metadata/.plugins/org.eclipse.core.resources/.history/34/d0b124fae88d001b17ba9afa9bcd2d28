@@ -1,0 +1,49 @@
+package dto;
+
+import java.io.Serializable;
+
+public class abandonedDogDto implements Serializable{
+	
+	private int seq;			//글번호
+	private String myid;		//작성자id
+	private int phonenum;		//작성자 연락처
+	private String address; 	//유기견의 발견 장소
+	private String mycontent;		//내용
+	private String filename;	//유기견 사진 
+	private String newfilename; //이미지
+	private int dan;			//위험등급(유기견의 상태)
+	private String wdate;		//제보일자
+	
+	public abandonedDogDto() {}
+
+	public abandonedDogDto(int seq, String myid, int phonenum, String address, String mycontent, String filename,
+			String newfilename, int dan, String wdate) {
+		super();
+		this.seq = seq;
+		this.myid = myid;
+		this.phonenum = phonenum;
+		this.address = address;
+		this.mycontent = mycontent;
+		this.filename = filename;
+		this.newfilename = newfilename;
+		this.dan = dan;
+		this.wdate = wdate;
+	}
+
+	public abandonedDogDto(String myid, int phonenum, String address, String mycontent, String filename,
+			String newfilename, int dan) {
+		super();
+		this.myid = myid;
+		this.phonenum = phonenum;
+		this.address = address;
+		this.mycontent = mycontent;
+		this.filename = filename;
+		this.newfilename = newfilename;
+		this.dan = dan;
+	}
+
+	
+	
+	
+	
+}

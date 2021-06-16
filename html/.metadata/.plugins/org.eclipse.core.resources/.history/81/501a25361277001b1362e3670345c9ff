@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#demo{background-color: ivory; color: aqua; text-align: center;}
+
+
+
+
+</style>
+
+
+</head>
+<body style="background-color: fuchsia;">
+<div id="demo">hello css world</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<div align="center">
+<a href = "http://localhost:8092/assignments/html%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C02_2.html">
+유럽 연합(EU)을 통해 하나 되는 유럽</a>
+<img alt="" align="center" hspace="20" src="./images/wea.jpg">
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#fullScr{width: 800px;height: 500px;background-color: gray;}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="fullScr">
+
+	<div id="left">
+	
+		<div id="leftUp">
+		
+		</div>
+		
+		<div id=leftDown>
+		
+		</div>
+	<div class=right>
+	
+		<div class=rightUp>
+		
+		</div>
+		<div class=rightDown>
+		
+		</div>
+	</div>
+	</div>
+</div>
+
+
+</body>
+</html>

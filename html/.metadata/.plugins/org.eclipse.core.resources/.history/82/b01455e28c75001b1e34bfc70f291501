@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+
+<body>
+<!-- anchor(link) -->
+<p>
+	<a href="httpL//www.google.com">구글로 이동</a>
+	</p>
+	<br>
+	<a href="./index3.html">index3로 이동</a>
+	<br>
+		<a href="./index2.html" target="_self">index2로 이동</a>
+		<br>
+		
+</body>
+</html>

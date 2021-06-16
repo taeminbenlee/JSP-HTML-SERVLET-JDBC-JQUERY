@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> <!-- root tag -->
+<head> <!-- child -->
+<meta charset="UTF-8"> <!-- child of head -->
+<title>Insert title here</title>
+</head>
+<body> <!-- child tag 2 -->
+
+<!-- 
+	DOM : Document Object Model
+		    각 tag를 접근하기 위한 object
+		    그 object를 접하기 위한 함수
+	
+-->
+	<!-- childNodes -->
+	<h3 id="intro">h3 tag id intro</h3>
+	<p id="demo">p tag id demo</p>
+	
+	<button type="button" onclick="func()">버튼</button>
+<script type="text/javascript">
+function func(){
+	let text = document.getElementById('intro').childNodes[0].nodeValue;
+}
+
+</script>	
+	
+	
+</body>
+</html>

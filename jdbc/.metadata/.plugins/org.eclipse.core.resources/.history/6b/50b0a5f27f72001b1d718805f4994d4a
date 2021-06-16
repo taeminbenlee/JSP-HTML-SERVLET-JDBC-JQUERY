@@ -1,0 +1,21 @@
+package main;
+
+import dto.UserDto;
+import jdbc.SelectTest;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SelectTest st = new SelectTest();
+		String id = "aba";
+		UserDto dto = st.search(id);
+		if(dto != null) {
+			System.out.println(dto.toString());
+		}
+		else {
+			System.out.println("데이터를 찾을수 없습니다.");
+		}
+	}
+
+}

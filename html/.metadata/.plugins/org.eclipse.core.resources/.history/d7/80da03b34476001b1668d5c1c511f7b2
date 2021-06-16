@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+
+	iframe : web안의 web
+			웹안에 또다른 포털, 맵, 또는 유튜브 영상같은걸 띄어넣는것, 
+ -->
+ 
+ <h3>여기는 iframe.html head(머리말)입니다</h3>
+ 
+ <iframe src="http://zum.com" witdth=300 height= 200></iframe>
+ 
+ 
+ 
+ 
+ <h3>여기는 iframe.html footer(꼬리말)입니다</h3> 
+ 
+</body>
+</html>

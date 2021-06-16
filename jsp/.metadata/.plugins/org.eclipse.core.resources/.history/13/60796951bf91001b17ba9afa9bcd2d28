@@ -1,0 +1,33 @@
+<%@page import="dao.MemberDao"%>
+<%@page import="Dto.MemberDto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<%
+request.setCharacterEncoding("utf-8");
+Object ologin = request.getSession().getAttribute("login");
+MemberDto mem = null;
+
+if(ologin == null){
+	
+	response.sendRedirect("login.jsp");
+}
+mem = (MemberDto)ologin;	
+%>
+<%
+String sseq = request.getParameter("seq");
+int seq = Integer.parseInt(sseq.trim());
+MemberDao dao = MemberDao.getInstance();
+MemberDto dto = dao.getMemberDetail(seq);
+
+%>
+<head>
+<meta charset="UTF-8">
+<title>회원정보수정</title>
+
+</head>
+<body>
+
+</body>
+</html>

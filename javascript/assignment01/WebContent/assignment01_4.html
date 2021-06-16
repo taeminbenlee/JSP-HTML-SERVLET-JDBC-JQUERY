@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#q1{font-size: 16pt; font-weight: bold;}
+#q2{font-size: 14pt;}
+</style>
+</head>
+<body>
+<font id=q1>체육관 이용 요금</font>
+<br><br>
+<font id=q2>기본 사용료(2명,4시간)40,800원</font><br>
+<input type="checkbox" id="chk1" onclick="updateCost(0)" value="20000"><font id=q2>야간 조명 (20,000원)</font><br>
+<input type="checkbox" id="chk2"onclick="updateCost(1)" value="4000"><font id=q2>배구 네트x2면 (4,000원)</font><br>
+<input type="checkbox" id="chk3" onclick="updateCost(2)" value="5000"><font id=q2>배구x10개 (5,000원)</font><br>
+<font id=q2>합계 금액:<input type="text" id="t1"value="40800" size="20">원정</font>
+<br><br>
+<script type="text/javascript">
+let total = parseInt(document.get.ElementById("t1").value);
+function updateCost(num){
+	if(num==0){
+		let ch1= document.getElementById("chk1").checked; //checked == true|false
+		let value = parseInt(document.getElementById("chk1").value);
+		if(ch1==true){
+			total=total+value;
+		}else{
+			total=total-value;
+		}
+		document.getElementById("t1").value = total;
+	}else if(num==1){
+		
+	}else if(num==2){
+		
+	}
+	
+	
+}
+
+</script>
+</body>
+</html>

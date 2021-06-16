@@ -1,0 +1,9 @@
+create or replace table AccountBook(
+	dateTime date,
+	title VARCHAR2(30),
+	classify VARCHAR2(30),
+	money number,
+	memo VARCHAR2(30)	
+);
+
+SELECT * FROM AccountBook;

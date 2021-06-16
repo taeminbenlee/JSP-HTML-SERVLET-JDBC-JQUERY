@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 이름, 나이 -->
+<!--  값과 함께 화면 이동 -->
+<!-- a -->
+<a href="NewFile.jsp?name=홍길동&age=24">NewFile.jsp로 이동</a>
+<!-- form -->
+<form action="NewFile.jsp">
+이름:<input type="text" name="name">
+<br>
+나이:<input type="text" name="age">
+<br>
+<input type="submit" value="이동">
+</form>
+</body>
+</html>

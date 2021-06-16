@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>여기는 view2.html</h2>
+<!-- 이전화면 가는 함수 -->
+<input type="button" value="이전" onclick="history.back()">
+<!-- 새로고침 함수 -->
+<input type="button" value="현재페이지를 갱신" onclick="location.reload()">
+<!-- 앞으로 가는 함수 -->
+<input type="button" value="진행" onclick="history.forward()">
+
+<button type="button" onclick="gopage()">view3.html로이동</button>
+<script type="text/javascript">
+
+function gopage() {
+	location.href = "view3.html";
+	
+}
+
+
+</script>
+
+</body>
+</html>

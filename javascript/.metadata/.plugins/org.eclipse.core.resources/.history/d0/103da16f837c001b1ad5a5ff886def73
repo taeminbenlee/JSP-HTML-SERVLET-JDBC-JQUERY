@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- 
+<body onload="checkMessage()">
+ onload 
+onload는 body또는 div tag에 넣어서 실행과 동시에 함수가 호출되게 할수있다.
+
+<p id="p1"></p>
+
+<script type="text/javascript">
+function checkMessage() {
+	document.getElementById('p1').innerHTML = 'checkMessage() 호출';
+	
+}
+
+</script>
+ -->
+<body>
+<pre>
+중국은 건물의 숫자만큼 공사 속도도 빠르기로 유명합니다. 
+지난 2015년에는 중국의 한 건설사가 57층짜리 건물을 19일 만에 완공해 화제가 되었습니다. 
+우리나라로 치면 63빌딩 정도의 건물을 3주 만에 지은 셈인데요. 
+건설사는 콘크리트 건조 과정이 필요 없는 조립식 공법으로 공사 기간을 단축했다며 
+규모 9의 강진도 견딜 수 있다고 주장했으나 
+건물의 안전성에 대한 우려가 끊임없이 제기되었죠
+</pre>
+</body>
+
+</html>

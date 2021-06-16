@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+
+	iframe : web안의 web
+			웹안에 또다른 포털, 맵, 또는 유튜브 영상같은걸 띄어넣는것, 
+			내가 작업한 html 가져다 놓을수도 잇다
+ -->
+ 
+ <h3>여기는 iframe.html head(머리말)입니다</h3>
+ 
+ <iframe src="http://zum.com" witdth=300 height= 200></iframe>
+ <br>
+ <iframe src="table.html" witdth=300 height= 200></iframe>
+ <br>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.564458680288!2d-87.97162164343116!3d42.312871826649484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f9120dbd2a8f7%3A0x36e233cd4a929439!2s17346%20Brookhill%20Rd%2C%20Libertyville%2C%20IL%2060048%2C%20USA!5e1!3m2!1sen!2skr!4v1614132488052!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ 
+ 
+ <h3>여기는 iframe.html footer(꼬리말)입니다</h3> 
+ 
+</body>
+</html>

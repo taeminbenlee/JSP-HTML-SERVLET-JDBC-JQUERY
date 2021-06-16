@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>2개의 주사위</h2><br>
+<p>버튼을 클릭하면 2개의 주사위가 랜덤됩니다.</p>
+<br><br>
+<img src="sai_1.gif" id="mypic1" alt="some image">
+<img src="sai_6.gif" id="mypic2" alt="some image">
+<br>
+<input type="button" id="diceRoll" onclick="roll()" value="주사위를 굴린다">
+
+
+<script type="text/javascript">
+function roll(){
+	var diceRoll1 = Math.floor( Math.random() * 6 ) +1;
+	var diceRoll2 = Math.floor( Math.random() * 6 ) +1;
+	alert('You rolled a ' + diceRoll1 + " and " + diceRoll2);
+	var myDice = new Array("sai_1.gif", "sai_2.gif", "sai_3.gif", "sai_4.gif", "sai_5.gif", "sai_6.gif")
+	document.getElementById("myPic1").src = myDice[diceRoll1];
+	document.getElementById("myPic2").src = myDice[diceRoll2];
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> <!-- root tag -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+	<!--  
+	HTML Hyper Text Markup Language
+		
+		Tag로 구성되어 있다
+		<태그명>문자열</태그명>	
+	URL Uniform Resource Locator
+	-->	
+	<br> <!-- break: 개행 -->
+	각성 효과를 위해 마시는 음료 중 대표적으로 <br>
+	'커피'를 빼놓고 이야기하지 않을 수 없겠는데요. <br>
+	뇌를 활성화하고 깨우는 역할을 하는 커피는 <br>
+	전세계적으로도 가장 인기 있는 음료 중 하나입니다. <br>
+	<br><br>
+	<!-- heading -->
+	<h1>Hello HTML</h1> 
+	<h2>Hello HTML</h2>
+	<h3>Hello HTML</h3>
+	<h4>Hello HTML</h4>
+	<h5>Hello HTML</h5>
+	<h6>Hello HTML</h6>
+	<br><br>
+	<!-- paragraph : 문락씩 끊어서 넣으면 자동으로 개행-->
+	<p>배찬효의 작업은 한 번 보면 잊을 수가 없다. 그만큼 독특하다는 얘기다. </p>
+	<p>남자 사진가가 직접 그 시대 여성으로 분장한 것도 특이한데, 작품 속에 은근 슬쩍(!) 등장하기까지 한다.</p>
+	
+	
+	<!-- presentation -->
+	<pre> <!-- Pre Formatted : 우리가 보는대로 여백 및 빈칸까지 적용된다-->
+	그는 먼저 2017년 르네상스 작품 속으로 들어갔다. 
+	굳이 르네상스 시대를 선택한 이유는 무엇일까. 
+	그에게 편견과 소외감을 안겨준 서구 사상의 뿌리가 되는 시점이기 때문이다. 
+	그중에서도 그리스로마 신화 이야기들을 작품으로 표현한 것이다. 
+	</pre>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

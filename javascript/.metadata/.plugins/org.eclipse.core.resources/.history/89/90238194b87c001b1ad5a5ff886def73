@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{text-align: center;}
+table, th, td {
+  border: 1px solid black;
+}
+th{background-color: gray;}
+</style>
+</head>
+<body>
+<h2>단가 수량 일람표</h2>
+<div id="parent">
+<table style="width: 50%" id='mytable'>
+		<tr>
+			<th>개수</th>
+			<th>제품A</th>
+			<th>제품B</th>
+			<th>상품C</th>
+		</tr>
+	
+</table>
+</div>
+<button type="button" onclick="addRow()">add</button>
+</body>
+
+<script type="text/javascript">
+function addRow(){
+	var table = document.getElementById('mytable');
+	//테이블긑에 행 추가
+	for (var i = 0; i < 10; i++) {
+		var row = table.insertRow(i);
+		//테이블에 셀 추가 인덱스0부터
+		var cell1 = row.insertCell(0);
+		var cell2 = row.insertCell(1);
+		var cell3 = row.insertCell(2);
+		var val1 = prompt('Enter the new price ');
+		var val2 = prompt('Enter the new price ');
+		var val3 = prompt('Enter the new price ');
+		cell1.innerHTML = val1;
+		cell2.innerHTML = val2;
+		cell3.innerHTML = val3;
+	}
+	
+	
+	
+}
+
+function appendNum() {
+	///tbody
+	var myBody = document.getElementById('tbody')
+	//tr
+	let myRow = myBody.insertRow(index)
+	while
+	var num1 = prompt('Enter the new price ');
+	 if(num1 != null) {
+		 var entry = document.createElement('td');
+		 entry.appendChild(document.createTextNode(num1));
+		 tbody.appendChild(entry);
+	 }
+	 //td 2
+	var num2 = prompt('Enter the new number ');
+	if(num2 != null) {
+		 var entry = document.createElement('td');
+		 entry.appendChild(document.createTextNode(num2));
+		 n.appendChild(entry);
+	 }
+</script>
+</html>

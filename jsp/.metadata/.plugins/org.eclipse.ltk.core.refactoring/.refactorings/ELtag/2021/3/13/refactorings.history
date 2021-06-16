@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;dto&apos; to &apos;JSPtag/src&apos;&#x0D;&#x0A;- Original project: &apos;ELtag&apos;&#x0D;&#x0A;- Destination element: &apos;JSPtag/src&apos;&#x0D;&#x0A;- Original element: &apos;ELtag/src/dto&apos;" description="Copy package" destination="=JSPtag/src" element1="/src&lt;dto" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1616478023859" version="1.0"/>
+</session>

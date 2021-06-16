@@ -1,0 +1,51 @@
+package cls;
+
+import java.sql.Connection;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+import dao.AccountDao;
+import db.DBConnection;
+
+
+public class insertClass {
+	/*
+	private String dateTime;
+	private String title;
+	private String classify;
+	private int money;
+	private String memo;
+	*/
+	//String dateTime, String title, String classify, int money, String memo
+	public void insert() {
+		Scanner sc = new Scanner(System.in);
+		DBConnection.initConnection();
+		insertClass it = new insertClass();
+		//리턴값이 있으니 카운트로 받자
+		System.out.println("날짜: ");
+		String dateTime = sc.next();
+		System.out.println("용도: ");
+		String title = sc.next();
+		System.out.println("분류: ");
+		String classify = sc.next();
+		System.out.println("금액: ");
+		int money = sc.nextInt();
+		System.out.println("메모: ");
+		String memo = sc.next();
+		
+		AccountDao.getInstance();
+		AccountDao dao;
+		int count = dao.insert(dateTime, title, classify, money, memo);
+		if(count == 1) {
+			System.out.println("데이터가 " + count + "개 추가되었습니다");
+		} else {
+			System.out.println("데이터가 추가되지 않았습니다.");
+		}	
+
+	}
+	
+}
+
+

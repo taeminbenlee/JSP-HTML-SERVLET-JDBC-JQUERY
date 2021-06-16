@@ -1,0 +1,38 @@
+package dao;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Scanner;
+
+import dto.accountDto;
+
+
+// Singleton 
+public class AccountDao {	// DB와 대화하는 클래스
+		private static AccountDao dao = null;
+		
+		private AccountDao() {
+			
+		}
+		
+		public static AccountDao getInstance() {
+			if(dao==null) {
+				dao = new AccountDao();
+			}
+			return dao;
+		}
+		
+		public void insert() {
+			
+		}
+		
+		public void delete() {
+			
+		}
+		
+		public void select() {
+			
+		}
+		
+}

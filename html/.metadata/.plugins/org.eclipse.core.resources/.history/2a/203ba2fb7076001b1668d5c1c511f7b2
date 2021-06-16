@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<font size="200%"><b>설문조사</b></font>
+<br><br>
+<form>
+이름:<input type="text" value="" title="이름 기입" size="20" placeholder="이름 기입">
+<br><br>
+<font>[질문1]</font><br>
+영어로 대화할 수 있습니까?<br>
+<input type="radio" name="q1" value="예">예 &nbsp;
+<input type="radio" name="q1" value="모르겠습니다">모르겠습니다. &nbsp;
+<input type="radio" name="q1" value="아니오">아니오
+<br><br>
+<font>[질문2]</font><br>
+영어외에 관심있는 언어가 있으면 선택(복수 선택 가능)<br>
+&nbsp; 
+<input type="checkbox" value="독일어"> 독일어 &nbsp;
+<input type="checkbox" value="중국어"> 중국어 &nbsp;
+<input type="checkbox" value="프랑스어"> 프랑스어
+<br><br>
+<font>[질문3]</font><br>
+영어 수업에 대한 의견이 있으시면 기입해 주십시오.<br>
+<textarea rows="10" cols="80"></textarea>
+<br><br>
+<font>[질문4]</font><br>
+<label for="age">당신의 연령을 선택해 주십시오.</label>
+<select name="age" id="gen">
+	<option value="10대">10대</option>
+	<option value="20대">20대</option>
+	<option value="30대">30대</option>
+	<option value="40대">40대</option>
+</select>
+</form>
+</body>
+</html>

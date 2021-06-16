@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>사진들</h2>
+<table>
+<tr>
+<td><img alt="" src="./img01.jpg"></td>
+<td><img alt="" src="./img02.jpg"></td>
+<td><img alt="" src="./img03.jpg"></td>
+<td><img alt="" src="./img04.jpg"></td>
+</tr>
+</table>
+</body>
+</html>

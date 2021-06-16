@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div id='id' style="color: red;background: orange;">test</div>
+</body>
+<script type="text/javascript">
+$(document).ready(function () { 
+	selector = '#id'
+
+		$(selector).click(function() {
+		    //instead of:
+		    var getAtt = this.getAttribute('style');
+		    //do i use:
+		    var thisProp = $(this).prop('style');
+		    //or:
+		    var thisAttr = $(this).attr('style');
+
+		    console.log(getAtt, thisProp, thisAttr);
+		});
+});
+</script>
+</html>

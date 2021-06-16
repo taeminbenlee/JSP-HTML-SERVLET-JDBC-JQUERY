@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="demo" style="background-color: ">
+<h1>배경색의 변경</h1>
+<p>다음 버튼을 클릭하면 홈페이지의 배경색을 변경할 수 있습니다.</p>
+
+<input type="button" id="red" onclick="bgcolor(1)" value="빨강">
+<input type="button" id="green" onclick="bgcolor(2)" value="녹색">
+<input type="button" id="navy" onclick="bgcolor(3)" value="청색">
+<input type="button" id="orange" onclick="bgcolor(4)" value="주황색">
+<input type="button" id="black" onclick="bgcolor(5)" value="검정색">
+<input type="button" id="white" onclick="bgcolor(6)" value="흰색">
+
+<script type="text/javascript">
+function bgcolor(num) {
+	let obj = document.getElementById('demo');
+	if (num==1){
+		obj.style.backgroundColor='red';
+	} else if (num==2){
+		obj.style.backgroundColor='green';
+	}else if (num==3){
+		obj.style.backgroundColor='navy';
+	}else if (num==4){
+		obj.style.backgroundColor='orange';
+	}else if (num==5){
+		obj.style.backgroundColor='black';
+	}else if (num==6){
+		obj.style.backgroundColor='white';
+	}
+}
+
+</script>
+</div>
+</body>
+</html>

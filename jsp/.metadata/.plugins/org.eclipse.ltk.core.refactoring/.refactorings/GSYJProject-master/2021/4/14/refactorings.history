@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Controller.FileController&apos; to &apos;FreeBoardFileController&apos;&#x0D;&#x0A;- Original project: &apos;GSYJProject-master&apos;&#x0D;&#x0A;- Original element: &apos;Controller.FileController&apos;&#x0D;&#x0A;- Renamed element: &apos;Controller.FreeBoardFileController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FileController&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Controller{FileController.java[FileController" matchStrategy="1" name="FreeBoardFileController" qualified="false" references="true" similarDeclarations="false" stamp="1617247409561" textual="false" version="1.0"/>
+</session>

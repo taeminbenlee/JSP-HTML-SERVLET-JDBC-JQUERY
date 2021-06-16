@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" name="frm">
+	<div align="center">
+	<strong>미술관 및 박물관의 링크</strong>
+	<br><br>
+	<!-- 실시간으로 함수 호출하는것 == onchange -->
+	<select id="link" name="myChoice" onchange="">
+		<option value="">대상을 선택</option>
+		<option value="http://sema.seoul.go.kr/">서울시립미술관</option>
+		<option value="">국립현대미술관</option>
+		<option value="">예술의전당</option>
+		<option value="">국립중앙박물관</option>
+		<option value="">서울역사박물관</option>
+		<option value="">국립민속박물관</option>
+	</select>
+	
+	<input type="button" value="링크로 이동" onclick="goto()">
+	<br><br>
+
+	<!-- 닫기, 윈두우 기본함수 클로즈 사용 -->
+	<button type="button" onclick="window.close()">close</button>	
+	
+	</div>
+</form>
+<script type="text/javascript">
+function goto() {
+	let value = document.getElementById('link').value;
+	location.href = value;
+}
+</script>
+</body>
+</html>

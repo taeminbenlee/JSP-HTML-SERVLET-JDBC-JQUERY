@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{text-align: center;}
+table, th, td {
+  border: 1px solid black;
+}
+th{background-color: gray;}
+</style>
+</head>
+<body>
+<h2>배열의 연산</h2>
+<div id="parent">
+<table style="width: 50%">
+	<thead>
+		<tr>
+			<th>개수</th>
+			<th>제품A</th>
+			<th>제품B</th>
+			<th>상품C</th>
+		</tr>
+	</thead>
+	<tbody >
+		<tr>
+			
+		</tr>
+		<tr>
+			
+		</tr>
+		<tr>
+			
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+
+</body>
+</html>

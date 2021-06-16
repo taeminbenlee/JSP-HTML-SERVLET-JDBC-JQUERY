@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- table: row(행), column(열)
+		
+		열
+		1	1	1 행
+		2	2	2
+		3	3	3
+<tr> == 행
+<th> == 열 table header == 볼드/가운데정렬
+<td> == 행에 속하는 각각의 데이터 즉
+<col width=""> == 컬럼의 폭
+<td align=""> 특정 데이터의 정렬
+<caption> == 테이블의 제목
+<th colspan="2"> == 그다음칸과 합한다 (컬럼의 합치기)
+ -->
+ 
+ <!-- <table border="1" style="width: 50%"> -->
+ 
+ <div align = "center">
+	 <table border= 2>
+		 <col width="50"><col width="100"><col width="200"><col width="50">
+		 <tr>
+		 <th>번호</th><th>성</th><th>이름</th><th>나이</th>
+		 </tr>
+		 
+		 <tr>
+		  <th>1</th><td>홍</td><td>길동</td><td align="center">24</td>
+		 </tr>
+		 
+		 <tr>
+		  <th>2</th><td>성</td><td>춘향</td><td align="center">16</td>
+		 </tr>
+	 
+	 </table>
+ </div>
+ 
+ <br><br>
+ <table border="1" style="width: 50%">
+ 	<caption>주소록</caption>
+ 
+ 	<tr>
+ 		<th>번호</th><th>이름</th><th>나이</th><th colspan="2">전화번호</th><!-- <th>전화번호</th> -->
+ 	</tr>
+ 	<tr>
+ 		<td>1</td><td>홍길동</td><td>24</td><td>123-4567</td><td>234-5678</td>
+ 	</tr>
+ 
+ </table>
+ 
+ 
+
+</body>
+</html>

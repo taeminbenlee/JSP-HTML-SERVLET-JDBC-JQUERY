@@ -1,0 +1,27 @@
+
+3월 08, 2021 09:33:37.85 NEW SESSION
+3월 08, 2021 09:33:37.85 [7364:9180:0308/093337.845:ERROR:device_event_log_impl.cc(214)] [09:33:37.845] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 09:35:06.90 [10080:6356:0308/093506.905:ERROR:device_event_log_impl.cc(214)] [09:35:06.905] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 15:08:02.60 [5108:392:0308/150802.609:ERROR:device_event_log_impl.cc(214)] [15:08:02.609] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+3월 08, 2021 15:39:37.63 [5108:392:0308/153937.634:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 15:56:20.88 [5108:392:0308/155620.880:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 15:56:43.48 [5108:392:0308/155643.487:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 15:58:24.46 [5108:392:0308/155824.462:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 16:17:53.65 [5108:392:0308/161753.659:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 17:19:21.23 [5108:392:0308/171921.229:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 17:46:01.15 [5108:392:0308/174601.158:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 17:53:18.00 [5108:392:0308/175318.007:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 18:13:25.06 [5108:392:0308/181325.061:ERROR:fallback_task_provider.cc(119)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+3월 08, 2021 18:51:12.83 [5108:392:0308/185112.835:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:13.83 [5108:392:0308/185113.837:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:14.83 [5108:392:0308/185114.839:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:17.93 [5108:392:0308/185117.936:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:20.16 [5108:392:0308/185120.163:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:27.20 [5108:392:0308/185127.200:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:37.18 [5108:392:0308/185137.183:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:47.55 [5108:392:0308/185147.554:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:51:57.53 [5108:392:0308/185157.531:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:52:10.65 [5108:392:0308/185210.656:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:52:11.96 [5108:392:0308/185211.963:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.5 s for first_image_paint 0.483 s
+3월 08, 2021 18:54:09.58 [5108:392:0308/185409.587:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.491 s for first_image_paint 0.475 s
+3월 08, 2021 18:54:10.58 [5108:392:0308/185410.588:ERROR:page_load_metrics_update_dispatcher.cc(170)] Invalid first_paint 0.491 s for first_image_paint 0.475 s

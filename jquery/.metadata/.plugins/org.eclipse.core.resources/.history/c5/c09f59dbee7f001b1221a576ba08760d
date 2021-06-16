@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style type="text/css">
+.aaa {
+ color:#f00;
+}
+.ccc {
+ padding:10px;
+ border:#000 2px solid;
+ background-color: red;
+}
+.q16_a {
+ text-decoration:underline;
+ color:#00F;
+}
+.q19_b{
+ text-decoration:underline;
+ color:#00F;
+}
+#q20 {
+ background:#FFF;
+ width:100px;
+ height:100px;
+}
+.button {
+ padding: 5px 10px;
+ border:#666 solid 1px;
+ background:#FFF;
+ display:block;
+ width:100px;
+ text-align:center
+</style>
+</head>
+<body>
+<p id="q01">Hello JQuery</p>
+<p id="q02"> Hello JQuery </p>
+<p id="q03"></p>
+<p id="q04">하이</p>
+<ul id="q5">
+ <li>리스트1</li>
+ <li>리스트2</li>
+ <li>리스트3</li>
+</ul> 
+<ul id="q6">
+ <li>리스트1</li>
+ <li>리스트2</li>
+ <li>리스트3</li>
+</ul>
+<p id="q7" style=“color:red”>hello world</p>
+<h3 id="q8"></h3>
+<p id="q9">반드시</p>
+<p id="q10">나는 성공한다. 내 이름은 </p>
+<ul id="q11">
+ <li>커피</li>
+</ul>
+<ul id="q12">
+ <li>커피</li>
+ <li>카푸치노</li>
+</ul>
+<p id="q13">최선을 다해서</p>
+<div class="ccc">
+ <p id="q14">최선을 다해서</p>
+</div>
+
+<p class="q15">가가가</p>
+<p>나나나</p>
+<p class="q15">다다다</p>
+<p>라라라</p>
+<p class="q15">마마마</p>
+
+<p class="q16">Q16</p>
+
+<p class="q17"><a href="#">aaa</a></p>
+<p><a href="#">bbb</a></p>
+<p class="q17"><a href="#">ccc</a></p>
+<p><a href="#">ddd</a></p>
+<p class="q17"><a href="#">eee</a></p>
+
+<p class="q18"><a href="#">AAA</a></p>
+<p><a href="#">BBB</a></p>
+<p class="q18"><a href="#">CCC</a></p>
+<p><a href="#">DDD</a></p>
+<p class="q18"><a href="#">EEE</a></p>
+
+<p class="q19_a">q19</p>
+
+<form>
+ <input type="text" value="입력하지 마십시오">
+</form>
+
+<p id="q20">q20</p> 
+
+<p class="button">버튼</p>
+<ul id="q21">
+ <li>리스트1</li>
+ <li>리스트2</li>
+ <li>리스트3</li>
+</ul>
+
+<script type="text/javascript">
+/* id의 "q01"텍스트 색상을 빨간색으로 변경하라. 
+id 명 "q02"텍스트 색상을 파랑으로 배경색을 노란색으로 변경하라
+id명 "q03" 에 텍스트 “JQuery"를 추가하라
+id명 q04의 “하이”의 내용을 <a hraf="#"> 태그를 포함한 “안녕하세
+요”로 대체하라
+ul 요소에 class 명 "aaa"를 추가하라
+li 요소를 제거하라
+문자의 색상 값을 p #q7에 출력하라
+텍스트의 앞에 “나는 성공한다” 를 추가하라
+p 요소의 끝에 자싞의 명을 추가하라
+<p id="q10">나는 성공한다. 내 이름은 </p>
+ul 요소의 li 태그 앞에 li 태그에 “홍차”를 추가하라
+<ul id="q11">
+ <li>커피</li>
+</ul>
+li 태그의 끝에 li 태그에 "홍차"를 추가하라
+<ul id="q12">
+ <li>커피</li>
+ <li>카푸치노</li>
+</ul>
+id 명 "q13"요소의 div태그와 class 명 "ccc"를 추가하십시오
+.ccc {
+ padding:10px;
+ border:#000 2px solid;
+ background-color: red;
+}
+<p id="q13">최선을 다해서</p>
+
+id 명 "q14"요소의 부모 요소 class 명 "ccc"를 제거하십시오
+
+class 명 "q15"에 있는 모든 요소 모두를 <p>xxx</p> 요소로 대체
+하십시오
+class 명 "q16"요소의 class 명을 "q16_a"로 고쳐 기입하십시오
+
+class 명 "q17"를 가진 요소의 a 태그의 href 속성을 제거하라
+
+class 명 "q18"를 가진 요소의 a 태그에 새로운 창으로 표시되도록 하
+는 속성을 추가하라.
+
+class 명 "q19_a"요소를 class 명 "q19_b"로 변경하라.
+
+양식에 입력 값을 "입력해 주십시오“로 변경하십시오
+
+id 명 "q20"의 요소를 브라우저 150px 300px 값으로 표시하라
+
+p 요소를 클릭하면 바로 아래 ul의 자식 요소를 모두 비우도록 하라
+*/
+$(document).ready(function(){
+$("#q01").css("color", "#ff0000");
+$("#q02").css({"color":"#0000ff", "background-color":"#ffff00"});
+$("#q03").text("JQuery");
+$("#q04").html("<a href='#'>안녕하세요</a>");
+$("#q5").addClass("aaa");
+var elements = $('#q6 li');
+elements.html(elements.html().replace('리스트', ''));
+var theColorIs = $('#q7').css("color");
+$("#q7").append(theColorIs);
+$("#q9").prepend("<p>나는 성공할 것이다</p>");
+$("#q10").append("<p>강백호</p>");
+$("#q11").children().before("<li>홍차</li>");
+$("#q12 li:last").append("<li>홍차</li>");
+
+$("#q13").wrap("<div class='ccc'></div>");
+$("#q14").unwrap("div.ccc");
+$(".q15").text('xxx');
+$(".q16").removeClass("q16").addClass("q16_a");
+$(".q17 a").removeAttr("href");
+$(".q18 a").attr('target','_blank');
+$(".q19_a").removeClass("q19_a").addClass("q19_b");
+$('input[type=text]').val("입력해 주십시오");
+$('#q20').css({"width: 150px", "height: 300px" });
+$(".button").on("click", function(){
+	$('#q21 li').remove();
+});
+	
+});
+</script>
+</body>
+
+
+
+</html>

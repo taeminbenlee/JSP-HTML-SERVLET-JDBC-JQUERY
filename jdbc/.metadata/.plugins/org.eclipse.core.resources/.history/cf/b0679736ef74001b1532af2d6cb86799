@@ -1,0 +1,54 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import db.DBConnection;
+
+public class updateClass {
+	public int Update(String title, int money) {
+		//1. query 생성
+		String sql = " UPDATE AccountBook "
+						+ " SET money = " + money + " "
+						+ " WHERE title = '" + title + "'";
+		System.out.println(sql);
+		
+		Connection conn = DBConnection.getConnection();
+		Statement stmt = null;
+		
+		int count = 0;
+		
+		//2. db connect
+		try {
+			stmt = conn.createStatement();
+		//3. db process	
+			count = stmt.executeUpdate(sql);
+			
+			System.out.println("성공적으로 수정됨");
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} finally {
+		//4. db close	
+			try {
+				if(stmt != null) {
+					stmt.close();
+				}
+				if(conn != null) {
+					conn.close();
+				}
+				
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
+		}
+		
+		return count;
+		
+	}
+
+	
+}

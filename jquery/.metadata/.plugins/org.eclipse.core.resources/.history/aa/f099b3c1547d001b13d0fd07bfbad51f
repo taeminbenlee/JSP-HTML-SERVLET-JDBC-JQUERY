@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!-- <script src="./jquery/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+
+</head>
+<body>
+<!-- 
+	Java Script : Client(front)언어
+				    화면의 resource와 값을 설정, 취득하는 부분의 처리
+				  DOM(getElementById, nodelist)
+	Spring Framework
+	Spring boot <=> Vue, react
+
+	JQuery : Java Script의 경량화, 간략화 - client
+			 Ajax(비동기 통신) - server, client(사버접근가능)
+				
+	
+	
+ -->
+ 
+<script type="text/javascript">
+/* 
+	JQuery = javascript, vue, react 호환가능
+	형식: $(+tag name+ OR +id+ OR +class+ OR +name+).handler(parameter)
+	
+			getter, setter의 설정
+			
+			[자바 스크립트의 경우]
+			1.let val = document.getElementById("id").value;
+			2.document.getElementById("id").value = "abc";
+			
+			[JQuery의 경우]
+			//일반 tag
+			html() == innerHTML
+			text() == 일반태그의 text
+			//form tag
+			val() == value
+			
+*/ 
+
+</script>
+<p>여기가 p 태그</p>
+
+<script type="text/javascript">
+//기본형식. 기본형식 안에 작성
+$(document).ready(function () {
+	//html()
+	//getter
+	//let ptag = $("p").html(); // p태그를 접근하여 그안의 html을 가져온다 .
+	//alert(ptag); //확인
+	//setter
+	//$("p").html( "hello <b>p</b> tag" ); //<b>는 적용되어 출력됨
+	
+	//text()
+	//getter
+	//let ptag = $("p").text();
+	//alert(ptag);
+	//setter
+	//$("p").text( "hello <b>p</b> tag"); //뭐든지 텍스트로 인식
+	
+	
+});
+
+</script>
+<p id="demo">p tag id demo </p>
+<script type="text/javascript">
+//기본형식. 기본형식 안에 작성
+$(document).ready(function () {
+	let demo=$("#demo").html();
+	alert(demo);
+
+});
+</script>
+</body>
+</html>

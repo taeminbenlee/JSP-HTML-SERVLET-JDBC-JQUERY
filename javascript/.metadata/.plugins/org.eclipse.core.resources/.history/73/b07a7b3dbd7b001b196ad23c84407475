@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+10진수 -> 2, 8, 16 진수 변환
+<br>
+
+10진수: <input type="text" id="num" size="20">
+<button type="button" onclick="func()">변환</button>
+
+결과:<p id=result></p>
+<script type="text/javascript">
+function func() {
+	let num = parseInt(document.getElementById("num").value);
+	alert(num);
+	
+}
+
+
+</script>
+
+</body>
+</html>

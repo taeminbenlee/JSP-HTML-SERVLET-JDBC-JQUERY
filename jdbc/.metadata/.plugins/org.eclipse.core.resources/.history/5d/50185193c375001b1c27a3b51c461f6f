@@ -1,0 +1,22 @@
+package cls;
+
+
+import java.util.Scanner;
+
+import dao.AccountDao;
+
+
+public class BalanceClass {
+	public void balance() {
+	AccountDao dao;
+	dao = AccountDao.getInstance();
+	
+	Scanner sc =new Scanner (System.in);
+	System.out.println("출력할 합계(지출/수입): ");
+	String classify = sc.next();
+	String result = dao.accountBalance(classify);
+	System.out.println(result);
+	} 
+	
+	
+}

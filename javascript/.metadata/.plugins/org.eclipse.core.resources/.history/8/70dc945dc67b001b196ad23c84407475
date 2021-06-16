@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="" name="frm">
+	<div align="center">
+	<strong>라면 타이머</strong>
+	<br><br>
+	<!-- 실시간으로 함수 호출하는것 == onchange -->
+	<select id="selid" name="myChoice" onchange="">
+		<option value="180">원하는 시간을 선택해 주십시오(기본 3분)</option>
+		<option value="300">5분</option>
+		<option value="180">3분</option>
+		<option value="150">2분30초</option>
+		<option value="120">2분</option>
+		<option value="60">1분</option>
+		<option value="30">30초</option>
+	</select>
+	
+	<input type="button" value="Timer Start" onclick="noodle()">
+	<br><br>
+		<!-- span 태그는 별 의미는 없다 그냥 div처럼 담는 것 -->
+	<span id="countdown">time selected</span>	
+	<br><br>
+	<!-- 닫기, 윈두우 기본함수 클로즈 사용 -->
+	<button type="button" onclick="window.close()">close</button>	
+	
+	</div>
+</form>
+
+
+</body>
+</html>

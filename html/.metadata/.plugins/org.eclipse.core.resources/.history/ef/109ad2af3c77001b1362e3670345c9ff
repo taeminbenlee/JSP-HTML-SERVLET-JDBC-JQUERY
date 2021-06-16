@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.fullScr{width: 800px; height: 500px; border: 4px solid #79D5FF;margin: auto;}
+.cls1{width: 500px;height: 100px; padding-top: 10px;padding-left: 10px;}
+.cls1desc{padding-left: 22px;}
+.cls2{width: 500px;height: 100px; padding-top: 10px;padding-left: 10px;}
+</style>
+</head>
+<body>
+<div>
+	<div class=fullScr>
+		<div class=cls1>
+		<img alt="" src="star.gif"> 목록 항목 A<br>
+			<div class=cls1desc> 그 상세한 설명
+			</div>
+		</div>
+		<div class=cls2>
+		<img alt="" src="star.gif"> 목록 항목 B<br>
+			<div class=cls1desc> 그 상세한 설명
+			</div>
+		</div>
+		<div class=cls3>
+		</div>
+	</div>
+</div>
+</body>
+</html>

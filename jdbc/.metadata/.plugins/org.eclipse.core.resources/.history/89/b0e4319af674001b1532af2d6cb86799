@@ -1,0 +1,42 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import db.DBClose;
+import db.DBConnection;
+import dto.accountDto;
+
+public class printAllClass {
+public ArrayList<accountDto> print(){
+		
+		//1. 쿼리
+		String sql = " SELECT * "
+				+ " FROM AccountBook ";
+		System.out.println(sql);
+		//2. connection
+		Connection conn = DBConnection.getConnection();
+		PreparedStatement pstm = null;
+		ResultSet rs = null;
+		ArrayList<accountDto> list = new ArrayList<accountDto>();
+		
+		//3. processing
+		
+		try {
+			pstm = conn.prepareStatement(sql);
+			rs = pstm.executeQuery();
+			
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} finally {
+		//4. close	
+			DBClose.close(conn, pstm, rs);
+		}
+		return list;
+	}
+}

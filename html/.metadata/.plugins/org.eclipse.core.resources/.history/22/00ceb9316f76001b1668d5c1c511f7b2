@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<font size="200%"><b>설문조사</b></font>
+<br><br>
+<form>
+이름:<input type="text" value="" title="이름 기입" size="20" placeholder="이름 기입">
+<br>
+
+
+
+
+
+
+</form>
+</body>
+</html>

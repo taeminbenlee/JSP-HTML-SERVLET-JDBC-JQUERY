@@ -1,0 +1,7 @@
+package jbdc;
+
+public class DeleteTest {
+	public DeleteTest() {
+		
+	}
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<div align="center">
+	<table border="1">
+	 <tr style="background-color: #6495ED">
+		<th>종목</th>
+		<th>거리</th>
+		<th>성별</th>
+		<th>기록</th>
+	 </tr>
+	</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+<h3>Detail View</h3>
+<textarea rows="2" cols="20">기본글입니다......</textarea>
+<br><br>
+
+<button type="button" id="answer">답글입력</button>
+<script type="text/javascript">
+
+<div id="answerFrm">
+//$("#answerFrm").hide();
+
+/* $(document).ready(function(){
+	
+	$("#answer").click(function(){
+		$("#answerFrm").show();
+		let txtf = "<br>답글:<input type='text' id='answerText'>";
+		$("#answerFrm").append(txtf);
+		
+		let btn = "<br><button type='button' id='answerbtn'>답글작성완료</button>";
+		$("#answerFrm").append(btn);
+		
+		
+	});
+	$("#answerbtn").click(function () {
+		alert('answerbtn click');
+	});
+}); */
+</div>
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#answer").click(function(){
+		let txtf = "<br>답글:<input type='text' id='answerText'>";
+		$("#answerFrm").append(txtf);
+		
+		let btn = "<br><button type='button' id='answerbtn'>답글작성완료</button>";
+		$("#answerFrm").append(btn);
+		
+		//$("#answerbtn").click(function () {
+		//	alert('answerbtn click');
+		//});
+	}); 
+	$(document).on("click", "#answerbtn", Function(){
+		alert('answerbtn on click');
+	});
+});
+</script>
+
+</body>
+
+</html>

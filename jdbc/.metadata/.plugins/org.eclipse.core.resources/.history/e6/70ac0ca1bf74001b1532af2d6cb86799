@@ -1,0 +1,61 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import dao.AccountDao;
+import db.DBConnection;
+
+
+public class insertClass {
+	private String dateTime;
+	private String title;
+	private String classify;
+	private int money;
+	private String memo;
+	
+	public int insert() {
+		AccountDao dao = AccountDao.getInstance();
+		//1. Query(String으로) 준비
+		String sql = " INSERT INTO accountbook(dateTime, title, classify, money, memo) "
+				+ " Values(sysdate '" + title + "','"+ classify +"',"+ money +",'" + memo +"')";
+				
+		System.out.println(sql);
+		//2. DB Connection
+		Connection conn = DBConnection.getConnection();
+		//2.1 Statement(java.sql)
+		Statement stmt = null;
+		//2.2 리턴값 integer 변수추가
+		int count = 0;
+		//3. DB Processing
+		//3.1 state = conn.createStatement(); 에서 try and catch
+		try {
+			stmt = conn.createStatement();
+		//3.1.1 state.executeUpdate(sql)을 통해 String sql이 실행되도록한다
+			count = stmt.executeUpdate(sql);
+			
+			System.out.println("성공적으로 추가되었습니다.");
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		//3.2 종료를 위해 finally
+		} finally {
+		//4. DB Close
+			try {
+			if(stmt != null) {
+					stmt.close();
+			} 
+			if(conn != null) {
+				conn.close();
+			}
+			
+			} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+			}
+		}
+		return count;
+	}
+	
+}

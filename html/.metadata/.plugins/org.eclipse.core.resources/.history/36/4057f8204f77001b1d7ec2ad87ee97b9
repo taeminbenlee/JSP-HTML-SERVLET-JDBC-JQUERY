@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SUGGESTED LISTENING – JAZZ ARTISTS</title>
+<style type="text/css">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</style>
+</head>
+<body>
+<div align="center">
+<div class = "row">
+<table>
+<caption style="font-size: 150%"><b>추천 재즈 뮤지션</b></caption>
+<thead>
+<tr>
+ <th>기타</th>
+ <th>피아노</th>
+ <th>보컬</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+ <td><a href="https://www.youtube.com/embed/JIkHn3FKBYY" target="content">George Benson</a></td>
+ <td><a href="https://www.youtube.com/embed/tT9Eh8wNMkw" target="content">Dave Brubeck</a></td>
+ <td><a href="https://www.youtube.com/embed/_OFMkCeP6ok" target="content">Tony Bennett</a></td>
+</tr>
+<tr>
+ <td><a href="https://www.youtube.com/embed/p9j4HLVyiJQ" target="content">Grant Green</a></td>
+ <td><a href="https://www.youtube.com/embed/nD9SAKiKaNU" target="content">Chick Corea</a></td>
+ <td><a href="https://www.youtube.com/embed/qIp9TwSEgFg" target="content">Ray Charles</a></td>
+</tr>
+<tr>
+ <td><a href="https://www.youtube.com/embed/L8YtwCQMfzY" target="content">Jim Hall</a></td>
+ <td><a href="https://www.youtube.com/embed/RDFr5pBQmXk" target="content">Bill Evans</a></td>
+ <td><a href="https://www.youtube.com/embed/mQouJdvB80U" target="content">Ella Fitzgerald</a></td>
+</tr>
+<tr>
+ <td><a href="https://www.youtube.com/embed/O4csj7s1uOI" target="content">Pat Martino</a></td>
+ <td><a href="https://www.youtube.com/embed/oP-vD4ScAGA" target="content">Herbie Hancock</a></td>
+ <td>Billie Holiday</td>
+</tr>
+<tr>
+ <td>Pat Metheny</td>
+ <td>Ahmad Jamal</td>
+ <td><a href="https://www.youtube.com/embed/LKaAS3ZxiKM" target="content">Diana Krall</a></td>
+</tr>
+<tr>
+ <td><a href="https://www.youtube.com/embed/MOm17yw__6U" target="content">Wes Montgomery</a></td>
+ <td><a href="https://www.youtube.com/embed/ENrRAIzlL1A" target="content">Keith Jarrett</a></td>
+ <td>Peggy Lee</td>
+</tr>
+<tr>
+ <td>Joe Pass</td>
+ <td><a href="https://www.youtube.com/embed/NTJhHn-TuDY" target="content">Oscar Peterson</a></td>
+ <td><a href="https://www.youtube.com/embed/le1QF3uoQNg" target="content">Frank Sinatra</a></td>
+</tr>
+<tr>
+ <td><a href="https://www.youtube.com/embed/gcE1avXFJb4"  target="content">Django Reinhardt</a></td>
+ <td>Bud Powell</td>
+ <td>Sarah Vaughn</td>
+</tr>
+<tr>
+ <td>Kurt Rosenwinkel</td>
+ <td>Horace Silver</td>
+ <td>Joe Williams</td>
+</tr>
+<tr>
+ <td>John Scofield</td>
+ <td>Joe Zawinul</td>
+ <td>Norma Winstone</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="4">아티스트 클릭시 유튜브 링크</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<iframe name = "content" width="560" height="315" src="https://www.youtube.com/embed/JIkHn3FKBYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+</body>
+</html>

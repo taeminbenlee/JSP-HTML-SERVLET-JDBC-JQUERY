@@ -1,0 +1,62 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import dao.AccountDao;
+import db.DBClose;
+import db.DBConnection;
+import dto.accountDto;
+
+public class insertClass {
+	/*
+	private String dateTime;
+	private String title;
+	private String classify;
+	private int money;
+	private String memo;
+	*/
+	//String dateTime, String title, String classify, int money, String memo
+	public int insert(accountDto dto) {
+		AccountDao dao = AccountDao.getInstance();
+		dao.insert();
+		
+		Connection c=null;  
+       
+        int recordCounter=0;  
+        
+		String sql = " INSERT INTO accountbook(dateTime, title, classify, money, memo) "
+				+ " Values(?,?,?,?,?) ";
+		
+		System.out.println(sql);
+		c = DBConnection.getConnection();
+		PreparedStatement pstm = null;
+		ResultSet rs = null;
+		try {
+			pstm = c.prepareStatement(sql);
+			pstm.setString(1, dto.getDateTime());
+			pstm.setString(2, dto.gettitle());
+			pstm.setString(3, dto.getClassify());
+			pstm.setInt(4, dto.getMoney());
+			pstm.setString(5, dto.getMemo());
+			rs = pstm.executeQuery();
+			
+			pstm.close();
+			
+		}  catch (SQLException e) {
+			
+			e.printStackTrace();
+		} finally {
+		//4. close	
+			DBClose.close(c, pstm, rs);
+		}
+		
+       return recordCounter;  
+    }  
+	
+}
+
+

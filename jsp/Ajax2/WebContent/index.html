@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p id="demo"></p>
+<br>
+<button type="button">클릭</button>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	
+	$("button").click(function() {
+
+		$.ajax({
+			url:"data.json",
+			type:'get',
+			datatype:"json",
+			success:function(data){
+			//	alert('success');
+			//	alert(data);
+				
+			//	let json = JSON.stringify(data);
+			//	alert(json);
+				
+			//	alert(data[0].name);
+			//	alert(data[0].age);
+				 
+			        //now json variable contains data in json format
+			        //let's display a few items
+			  /*       for (var i=0;i<data.length;++i)
+			        {
+			            $('#demo').append(data[i].name + " ");
+			            $('#demo').append(data[i].age + " ");
+			            $('#demo').append(data[i].address + " ");
+			            $('#demo').append(data[i].phone + " ");
+			        } */
+			        
+			        $.each(data, function(index, element) {
+			            $('#demo').append(index + " ");
+			            $('#demo').append(element.name + " ");    
+			            
+			            });
+			},
+			error:function(){
+				alert('error');
+			}
+			
+			
+			
+		});
+		
+	
+		
+	});
+	
+	
+});
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

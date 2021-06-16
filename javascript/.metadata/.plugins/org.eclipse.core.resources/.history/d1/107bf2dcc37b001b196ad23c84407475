@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<div id="demo">Hello JS CSS</div>
+<button type="button" onclick="func()">적용</button>
+
+
+
+</body>
+</html>

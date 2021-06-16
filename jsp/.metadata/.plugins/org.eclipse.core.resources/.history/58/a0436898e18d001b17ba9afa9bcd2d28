@@ -1,0 +1,27 @@
+<%@page import="dto.abandonedDogDto"%>
+<%@page import="dao.abandonedDogDao"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<%-- <%
+request.setCharacterEncoding("utf-8");
+MemberDto mem = (MemberDto)request.getSession().getAttribute("login");
+
+%> --%>
+
+<%
+String sseq = request.getParameter("seq");
+int seq = Integer.parseInt(sseq.trim());
+
+abandonedDogDao dao = abandonedDogDao.getInstance();
+abandonedDogDto dto = dao.get(seq);
+%>
+<body>
+
+</body>
+</html>

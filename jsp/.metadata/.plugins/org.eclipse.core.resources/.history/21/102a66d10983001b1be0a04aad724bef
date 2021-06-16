@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+
+<p id="demo"></p>
+<br>
+<button type="button">클릭</button>
+
+
+
+<script type="text/javascript">
+$(function(){
+	
+	$("button").click(function(){
+		
+		$.ajax({
+			url:"data.jsp",
+			type:"get"
+			dataType: "json",
+			success: function(data) {
+              alert(data);
+                
+            },
+            error:function(){
+            	alert('error');
+            }
+		})
+		
+		
+		
+	})
+	
+
+	
+})
+
+
+
+
+</script>
+</body>
+</html>

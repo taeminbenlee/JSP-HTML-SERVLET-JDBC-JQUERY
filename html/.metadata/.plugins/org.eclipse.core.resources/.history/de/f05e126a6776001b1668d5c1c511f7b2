@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  
+
+	list : 목록
+	 1.
+	 2.
+	 3.
+	 즉 로우만 있는것
+
+<ul> unordered list(순서없는 목록) dot로 표시됨
+style="list-style-type: disc
+style="list-style-type: circle
+style="list-style-type: square
+style="list-style-type: none
+<ol> ordered list : 순서생성됨 번호
+<ol type="1"> 오더리스트 타입 html4에서
+type="1"
+type="i" 로마자 오더
+type="a" 알파벳오더
+<ol start="3"> html5에서 생겼고 3지정하면 3부터 숫자 부여됨
+
+ul 안에 ol을 넣거나 ol안에 ul을 넣을수도 있다
+
+ -->
+ 
+ <ul>
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: disc">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: circle">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: square">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: none; padding-left: 2rem">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ol>
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ol>
+ 
+ <hr><hr>
+ 
+ <ol type="1">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ol>
+<hr><hr>
+ 
+ <ol start="3">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ol>
+  <hr><hr>
+ 
+ <ol type="a">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ol>
+  <hr><hr>
+ 
+ <ol type="i">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ol> 
+ 
+ <ul>
+ 	<li>coffee
+ 		<ol>
+ 			<li>black</li>
+ 			<li>milk</li>
+ 		</ol>
+ 	</li>
+	<li>tea</li>
+	<li>juice</li>
+ </ul>
+ 
+</body>
+</html>

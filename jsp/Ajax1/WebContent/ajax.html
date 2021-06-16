@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<p id="demo"></p>
+<br>
+<button type="button">클릭</button>
+
+<script type="text/javascript">
+$(function () {
+
+	$("button").click(function() {
+		
+		$.ajax({
+			//////////////////// send 
+			url:"data.jsp",
+			type:"get",		// get/post -> servlet
+		//	data: "t1=XYZ&t2=자차카",
+			data: { t1:"xyz", t2:"다라마" },
+			////////////////////
+			
+			//////////////////// recv
+			success:function(data, status, xhr){
+			//	alert("success");
+			//	alert(data);
+				$("#demo").html(data);
+			//	alert(status);
+				alert(xhr.responseText);
+			},
+			error:function(/* xhr, status, error */){
+				alert("error");
+			},
+			complete:function(xhr, status){
+				alert("통신 종료");
+			}
+			///////////////////
+		});		
+		
+	});	
+	
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p id="demo">p tag id demo</p> <!--  일반 태그() -->
+
+<input type="text" id="t1"value="" size="20"> <!-- form 태그(input, output) -->
+<br>
+<input type="button" value="input button" onclick="btnclick()">
+<br>
+
+<script type="text/javascript">
+//함수명으로 click은 쓸수없다. 기본값으로 어딘가에 쓰여짐
+//버튼클릭시 메소드 호출 되면서 alert뜨고 id=demo의 내용이 바뀌는 메소드
+function btnclick() {
+	alert("btnclick() 호출");
+	document.getElementById("demo").innerHTML = "버튼클릭됨";
+	//text field의 값을 얻어오는 법 .value //setter활용
+	let t1 = document.getElementById("t1").value;
+	alert("text: "+ t1); 
+	//text field의 값을 내보내는법  
+	document.getElementById("t1").value = "World";
+}
+
+
+
+</script>
+<br><br>
+<input type="button" value="input button" onclick="btnfunc(1)">
+<br>
+<button type="button" onclick="btnfunc(2)">button tag</button>
+
+<script type="text/javascript">
+//메소드생성 ,매개변수 하나 추가, 조건문 사용
+function btnfunc( num ){
+	let name;
+	if(num == 1){
+		name = 'input button click';
+	}else{
+		name = 'button tag click';
+	} alert(name);
+	
+	document.getElementById("demo").innerHTML = sum(192,58);
+	document.getElementById("t1").value = sum(3, 6);
+}
+//return값이 있는 메소드
+function sum(x, y) {
+	return x * y;
+}
+
+</script>
+<br><br>
+
+입력:<input type="text" id="num" value="123">
+<br><br>
+<button type="button" onclick="inputclick()">클릭</button>
+
+<script type="text/javascript">
+//입력의 데이터를 얻어와서 메소드에 갱신
+function inputclick(){
+	let num = document.getElementById("num").value;
+	//입력 text의 값을 바꾸어 주는 법 //input type 이 text이기때문에 text로 String으로 되어있기때문에 형변환을 해주자
+	document.getElementById("num").value = parseInt(num) + 3;
+	
+}
+
+
+</script>
+</body>
+</html>

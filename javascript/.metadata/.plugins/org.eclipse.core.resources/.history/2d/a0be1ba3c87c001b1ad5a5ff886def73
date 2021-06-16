@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{text-align: center;}
+table, th, td {
+  border: 1px solid black;
+}
+th{background-color: gray;}
+</style>
+</head>
+<body>
+<h2>단가 수량 일람표</h2>
+<div id="parent">
+<table style="width: 50%" id='mytable'>
+		<tr>
+			<td>개수</td>
+			<td>제품A</td>
+			<td>제품B</td>
+			<td>상품C</td>
+		</tr>
+	
+</table>
+</div>
+<button type="button" onclick="insert_Row()">add</button>
+</body>
+
+<script type="text/javascript">
+function insert_Row() {
+var x=document.getElementById('mytable').insertRow(-1);
+var a = x.insertCell(0);
+var b = x.insertCell(1);
+var c = x.insertCell(2);
+var d = x.insertCell(3);
+let val1 = prompt("입력");
+let val2 = prompt("입력");
+let val3 = prompt("입력");
+let val4 = prompt("입력");
+a.innerHTML=val1;
+b.innerHTML=val2;
+c.innerHTML=val3;
+d.innerHTML=val4;
+}
+
+
+</script>
+</html>

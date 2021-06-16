@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!--
+	
+	access attribute differently by its purpose
+	
+	id 		:	검사. 1개만 접근
+	class 	:	CSS. 다수 
+	name 	:	데이터. 다수
+-->
+
+<p id="pid"> p tag id pid</p>
+<br>
+<p id="pid"> p tag id pid</p>
+<br>
+<h3 class='h3cls'>h3 tag class h3cls</h3>
+<p class = 'h3cls'>p tag class h3cls</p>
+
+
+<button type="button" onclick="btnclick()">버튼</button>
+<br>
+
+<script type="text/javascript">
+function btnclick() {
+	//버튼클릭시 값 변경 (id가 두개일경우 첫번째거만 바뀐다..)
+	document.getElementById('pid').innerHTML = 'p 태그입니다';
+	//배열값을 넣는다.
+	document.getElementsByClassName('h3cls')[0].innerHTML = 'h3cls클래스입니다';
+	document.getElementsByClassName('h3cls')[1].innerHTML = 'h3cls클래스입니다';
+	
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

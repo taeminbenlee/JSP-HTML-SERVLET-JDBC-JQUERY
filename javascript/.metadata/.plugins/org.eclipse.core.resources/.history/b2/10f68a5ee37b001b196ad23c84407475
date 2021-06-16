@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>환영합니다</h1>
+<p>현재 시각은
+<input type="text" id="text" size="50">
+입니다.</p>
+
+<script type="text/javascript">
+
+
+var d = new Date();
+var formatteddatestr = moment(d).format('hh:mm:ss a');
+document.getElementById("text").value = d;
+
+</script>
+</body>
+</html>

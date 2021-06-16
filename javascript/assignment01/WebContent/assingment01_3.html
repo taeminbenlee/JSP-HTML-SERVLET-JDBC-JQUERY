@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#q1{font-size: 16pt; font-weight: bold;}
+#q2{font-size: 14pt;}
+</style>
+</head>
+<body>
+<font id=q1>변수의 연산</font>
+<br><br>
+<font id=q2>a,b에 대해서 변수 a와 b의 계산 결과를 표시합니다.</font>
+<br><br>
+<button type="button" id="plus" onclick="inputclick(1)">덧셈</button>
+<button type="button" id="subtract" onclick="inputclick(2)">뺄셈</button>
+<button type="button" id="multiply"onclick="inputclick(3)">곱셈</button>
+<button type="button" id="divide"onclick="inputclick(4)">나눗셈</button>
+<button type="button" id="remainder"onclick="inputclick(5)">나머지</button>
+<br><br>
+<input type="text" id="num1"  size="10">
+<input type="text" id="op"  size="10">
+<input type="text" id="num2"  size="10"><font>=</font>
+<input type="text" id="result" size="15">
+
+<script type="text/javascript">
+function inputclick( num ){
+	
+	var oper = document.getElementById("op").value;
+	if (num ==1) {
+	document.getElementById("op").value = "+";
+	calc();
+	 } else if (num == 2) { 
+		 document.getElementById("op").value = "-";
+		 calc();
+	 }else if (num == 3) { 
+		 document.getElementById("op").value = "*";
+		 calc();
+	 }else if (num == 4) { 
+		 document.getElementById("op").value = "/";
+		 calc();
+	 }else if (num == 5) { 
+		 document.getElementById("op").value = "%";
+		 calc();
+	 } 
+	 
+}
+function calc() {
+
+var D = "0";
+var A = document.getElementById("num1").value;
+var B = document.getElementById("op").value;
+var C = document.getElementById("num2").value;
+
+if (B === "+")
+{
+D = parseInt(A)+parseInt(C); 
+}
+else if(B === "-")
+{
+D = parseInt(A)-parseInt(C);
+}
+else if(B === "*")
+{
+D = parseInt(A)*parseInt(C);
+}
+else if (B === "/")
+{
+	if(C==0){
+		alert('계산할수없습니다');
+		return;
+	}
+D = parseInt(A)/parseInt(C);
+}
+else if (B == "%")
+{
+D = parseInt(A)%parseInt(C);	
+}
+document.getElementById("result").value = D;
+return false;
+}
+</script>
+
+
+
+
+</body>
+</html>

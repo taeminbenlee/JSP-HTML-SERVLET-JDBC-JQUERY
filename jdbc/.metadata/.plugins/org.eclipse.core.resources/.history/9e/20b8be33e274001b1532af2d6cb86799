@@ -1,0 +1,54 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import db.DBClose;
+import db.DBConnection;
+import dto.accountDto;
+
+public class selectUseClass {
+public ArrayList<accountDto> getTitle(String title){
+		
+		//1. 쿼리
+		String sql = " SELECT * "
+				+ " FROM USERTEST "
+				+ " WHERE TITLE = ? ";
+		System.out.println(sql);
+		//2. connection
+		Connection conn = DBConnection.getConnection();
+		PreparedStatement pstm = null;
+		ResultSet rs = null;
+		ArrayList<accountDto> list = new ArrayList<accountDto>();
+		
+		//3. processing
+		
+		try {
+			pstm = conn.prepareStatement(sql);
+			pstm.setString(1, title);
+			rs = pstm.executeQuery();
+			
+			while(rs.next()) {
+				String dateTime = rs.getString("dateTime");
+				title = rs.getString("title");
+				String classify = rs.getString("classify");
+				int money = rs.getInt("money");
+				String memo = rs.getString("memo");
+				
+				accountDto dto = new accountDto(dateTime, title, classify, money, memo);
+				list.add(dto);
+			}
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} finally {
+		//4. close	
+			DBClose.close(conn, pstm, rs);
+		}
+		return list;
+	}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!--  
+	java script != java			java script를 사용한 언어: NodeJS, Vue, react, angler 
+	front end 언어
+	목적: 웹브라우저의 tag를 접근하기 위한 스크립트
+			보조 프로그래밍 언어 이다.
+			컴파일(C언어를 번역)을 하지 않는다. -> 즉, 처리가 가볍고 속도가 빠르다.
+	java script 간략화, 경량화 -> JQuery == 두개를 같이 씀
+	
+	Java Script 사용 예) 	회원가입 -> 빈칸조사, ID 글자수 및 조건 조사, PW 조건 조사.
+						CSS의 제어 및 구현
+						타이머를 설정해서 특수효과 같은 처리가능
+						function사용
+						class 사용
+						
+			속성(attribute) -> 특성property
+			element(요소)
+			 id 	= 1개 (검사용)
+			 class  = 다수 (css)
+			 name 	= 다수 (css) ex) check box - > link용
+ -->
+ 
+<p id="demo">p tag id demo</p>
+
+<script type="text/javascript">
+//java script territory
+/*
+	범위 주석
+ */
+console.log("Run Java Script");
+//alert('run java script!!'); //modal 창
+//위의 p tag 접근: element를 id로 접근하고 안쪽의 html코드를 가져오자. 
+//var v = document.getElementById("demo").innerHTML; //변수 설정 //getter var v는 값을 담기위한 변수
+//alert(v);
+//document.getElementById("demo").innerHTML = 'id demo tag p'; // setter 변경된 태그값이 반영됨
+
+var obj = document.getElementById("demo"); //p tag 를 getter로 가져옴
+alert(obj.innerHTML); // 가져온값을 반영
+
+//document.getElementById 값을 가져오는 명령어
+
+</script>
+
+
+
+
+
+</body>
+</html>

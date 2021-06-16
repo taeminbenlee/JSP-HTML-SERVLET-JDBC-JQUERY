@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>유기견을 제보 합니다</h1>
+<p>소중한 아이들의 보호에 참여해 주세요</p>
+<img alt="" src="./image/reportdog.png">
+</body>
+</html>

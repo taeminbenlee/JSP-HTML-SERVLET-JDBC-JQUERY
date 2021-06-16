@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	Java Script : Client(front)언어
+				    화면의 resource와 값을 설정, 취득하는 부분의 처리
+				  DOM(getElementById, nodelist)
+	Spring boot <=> Vue, react
+
+	JQuery : Java Script의 경량화, 간략화
+	
+	
+	
+ -->
+</body>
+</html>

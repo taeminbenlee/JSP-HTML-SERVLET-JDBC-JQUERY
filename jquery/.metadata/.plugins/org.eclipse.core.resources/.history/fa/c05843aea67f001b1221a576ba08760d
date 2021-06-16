@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+<h1>Life on the Water</h1>
+<br>
+<table>
+<tr>
+	<td><img class='img' src="./photo1.jpg"></td>
+	<td><img class='img' src="./photo2.jpg"></td>
+</tr>
+<tr>
+	<td><img class='img' src="./photo3.jpg"></td>
+	<td><img class='img' src="./photo4.jpg"></td>
+</tr>
+
+
+</table>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$('img').click(function(){
+		$(this).css("border", "solid 2px red");
+	});
+	$('.img').click(function(){
+		$(this).css();
+	});
+	
+});
+
+</script>
+</html>

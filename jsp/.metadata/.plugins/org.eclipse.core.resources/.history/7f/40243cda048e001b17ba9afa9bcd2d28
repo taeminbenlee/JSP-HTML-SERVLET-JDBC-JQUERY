@@ -1,0 +1,109 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+ crossorigin="anonymous">
+<style type="text/css">
+h1{color: white;}
+h2{font-family: 'Rock Salt', cursive; color: aqua;}
+p{font-family: 'Rock Salt', cursive; color: white;}
+.nav-link{font-family: 'Nanum Pen Script', cursive; font-size: 30px;}
+.welc{font-family: 'Nanum Pen Script', cursive; font-size: 30px;}
+.navbar-brand{font-family: 'Nanum Pen Script', cursive; font-size: 30px;}
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+#leftScr{width:62.1%; height:100%; float: left;}
+#rightScr{width:37.9%; height:100%; float: left;}
+body{background-color: black;}
+.utill2{float: left;}
+.utill3{float: left;}
+.utill4{float: left;}
+#UrgencyLevel{width: 100px;}
+#choice{width: 100px; height: 60px;}
+#search{width: 800px; height: 60px;}
+#text1{width:100%; height:100%; float: center; margin-top: 200px; 
+		font-family: 'Nanum Pen Script', cursive; font-size: 30px;}
+</style>
+</head>
+<body>
+
+<!-- <form action="bbs?param=writeAf" method="post"> -->
+<form action="controller?param=reportAf" method="post" enctype="multipart/form-data">
+<div id="text1">
+	<table class="table table-dark table-hover">
+	<caption><h1>유기견 제보</h1></caption>
+<colgroup>
+<col width="200"><col width="400">
+</colgroup>
+
+<tr>
+	<th>아이디</th>
+	<td>
+		<%-- <input type="text" name="id" size="50px" value="<%=mem.getId() %>"> --%>
+		<input type="text" name="id" size="50px" value=${login.id } readonly="readonly">
+	</td>
+</tr>
+
+<tr>
+	<th>위급등급(매우위급5 ~ 건강함1)</th>
+	<td>
+		<div class="form-group">
+      <select class="form-control" id="UrgencyLevel" name="danger">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    	</div>
+	</td>
+</tr>
+<tr>
+	<th>발견장소</th>
+	<td>
+		<textarea rows="3" cols="50px" name="address"></textarea>
+	</td>
+</tr>
+<tr>
+	<th>연락처</th>
+	<td>
+		<input type="text" name="phonenum" size="50px">
+	</td>
+</tr>
+<tr>
+	<th>내용</th>
+	<td>
+		<textarea rows="10" cols="50px" name="content"></textarea>
+	</td>
+</tr>
+<tr>
+	<th>첨부파일</th>
+	<td>
+		 <input type="file" name="fileload">	
+	</td>
+</tr>	
+<tr>
+	<td colspan="2">
+		&nbsp;&nbsp;<input type="submit" class="btn btn-warning" value="제보">
+	</td>
+</tr>
+</table>
+</div>
+<!-- </form> -->
+</form>
+</body>
+</html>

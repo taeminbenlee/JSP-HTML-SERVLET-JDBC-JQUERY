@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+tag안에 사용하는 tag
+
+<p>보통의 단락태그</p>
+
+<p><b>bold</b> text</p>
+<!-- 둘다 bold임 -->
+<p><strong>strong</strong></p>
+
+<p><i>이텔릭</i> 텍스트</p>	
+<!-- 둘다 기울림인데 밑은 강조..? -->
+<p>나는 <em>성공</em>할 것 입니다</p>
+
+<h2>Hyper Text <mark>Markup</mark> Language</h2>
+<!-- highlight = mark -->
+
+
+<p>보시는 글은 <del>삭제된</del> 글입니다</p>
+<!-- del = 줄쳐줌 삭제 -->
+
+<p>이것은 <sub>아래첨자</sub>입니다</p>
+
+
+
+
+
+</body>
+</html>

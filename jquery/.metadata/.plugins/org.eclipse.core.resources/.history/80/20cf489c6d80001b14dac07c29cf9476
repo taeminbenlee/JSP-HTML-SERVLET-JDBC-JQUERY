@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style type="text/css">
+#q32_box {
+ position:relative;
+ height:250px;
+}
+#q32 {
+ width:150px;
+ height:150px;
+ background:#F0F;
+ position:absolute;
+}
+
+</style>
+</head>
+<body>
+<div id="q30">
+ <img src="./83858_1000.jpg">
+</div>
+<ul class="eee">
+ <li>리스트①</li>
+ <li>리스트②</li>
+ <li>리스트③</li>
+ <li>리스트④</li>
+ <li>리스트⑤</li>
+ <li>리스트⑥</li>
+</ul>
+<p id="q31"></p>
+
+<div id="q32_box">
+ <div id="q32"></div>
+</div>
+
+<div id="q33"></div>
+
+<h4>주인공</h4>
+<ul class="q34">
+ <li>홍길동</li>
+ <li>일지매</li>
+ <li>임꺽정</li>
+ <li>정수동</li>
+</ul>
+<p class="q34">주인공들의 모임</p>
+
+
+<ul id="q35">
+ <li>커피</li>
+ <li>홍차</li>
+ <li>우유</li>
+ <li>쥬스</li>
+ <li>소다</li>
+</ul>
+
+<script type="text/javascript">
+/* id 명 "q30"요소에 크기가 큰 이미지를 배치하고 그 페이지가 로드되면
+이미지 크기를 폭 500px, 높이 300px로 사이즈를 지정하십시오. 
+
+브라우저 창 크기가 변경된 시점에서 Q30.에 지정된 이미지 크기를 폭 50px 높이
+30px 사이즈를 지정하십시오.(앞 화면에)
+
+class 명 eee의 ul 요소의 목록의 수를 취득 해, 
+id 명 q31 요소 li 태그의 수는 n 개로 표시하라
+
+q31 목록을 클릭하면 지금 클릭된 요소가 몇 번째인지를 id 명 q31 요소를 클릭 하면
+n 번째로 표시되도록 한다
+※ 카운트는 "0"대신 "1"부터 시작한다.
+
+id 명 q32 요소 클릭하면 윈도우에서 왼쪽 위치를 가져 요소를 + 500px 오른쪽으로
+이동하라.
+
+"합격"은 70 점 이상, "불합격“은 75점 이하의 판정을 id 명 "q36"요소에 출력하라
+
+class 명 .q34의 ul 요소 목록의 텍스트를 순서대로 class 명 p 요소의 q34에 ","를
+추가하여 앞 부분에 출력하라.
+
+id 명 q35의 ul 요소의 목록들의 맨 앞에 1부터 카운트 번호 및 문자열 ","를 추가하라.
+
+*/
+
+$("#q30 img").width(500);
+$("#q30 img").height(300);
+
+$(document).ready(function () {
+    $(window).resize(function() {
+        updateImageSize();
+    });
+});
+function updateImageSize() {
+            $("#q30 img").css({"width": "50px", "height": "30px"}); 
+};
+
+var count = $(".eee li").length;
+$("#q31").html(count);
+
+$( ".eee li" ).click(function() {
+	 
+	  var index = $( ".eee li" ).index( this );
+	  alert(index + 1);
+	});
+		
+$("#q32").click(function() {
+	  $("div#q32").animate({ right: '500px' });
+	});
+
+
+var lnx = $('.q34 li');
+
+for (let i = 0; i < lnx.length; i++) {
+  var txt = lnx[i].textContent;
+  console.log(txt + '\n');
+  let str =  txt + ", 주인공들의 모임";
+  $("p.q34").append("<p>"+ str+"</p>" );
+};
+
+//마지막 문제
+
+
+
+	
+</script>
+
+</body>
+</html>

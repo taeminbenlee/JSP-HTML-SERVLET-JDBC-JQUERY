@@ -1,0 +1,55 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import db.DBClose;
+import db.DBConnection;
+import dto.accountDto;
+
+
+public class selectDateClass {
+	
+	public accountDto search(String dateTime) {
+		//1. query작업
+			String sql = " SELECT * "
+					+ " FROM AccountBook "
+					+ " WHERE ID = '" + dateTime + "' ";
+			
+			
+			System.out.println(sql); // 확인용 으로 직어놓자
+		//2 데이터 연결	
+			Connection conn = DBConnection.getConnection();
+			Statement stmt = null;
+			ResultSet rs = null; //db로부터 결과를 return받는 값
+			
+			accountDto dto = null;
+		//2.1 데이터 프로세스 stmt = conn.createStatement(); 에 try catch	
+			try {
+				stmt = conn.createStatement();
+				rs = stmt.executeQuery(sql);
+				if(rs.next()) { 	//true일경우 데이터가 있는경우
+		//2.2 데이터를 받아오는 절차
+					dateTime = rs.getString("dateTime"); //db로부터 넘어온 데이터를 스트링으로 변환하여 id라는 컬럼값을 받는다
+					String title = rs.getString("title"); 
+					String classify = rs.getString("classify"); 
+					int money = rs.getInt("money");
+					String memo = rs.getString("memo");
+		//2.3 받아온 데이터를 dto에 넣어준다
+					dto = new accountDto(dateTime, title, classify, money, memo); 
+					
+				}
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+		//3. close db
+			} finally {
+				DBClose.close(conn, stmt, rs);
+			}
+			return dto;
+			
+		}
+}

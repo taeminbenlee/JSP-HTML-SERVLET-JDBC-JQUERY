@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{text-align: center;}
+table, th, td {
+  border: 1px solid black;
+}
+th{background-color: gray;}
+</style>
+</head>
+<body>
+<h2>단가 수량 일람표</h2>
+<div id="parent">
+<table style="width: 50%">
+	<thead>
+		<tr>
+			<th>개수</th>
+			<th>제품A</th>
+			<th>제품B</th>
+			<th>상품C</th>
+		</tr>
+	</thead>
+	<tbody id = "tbody">
+		
+	</tbody>
+</table>
+</div>
+<button type="button" onclick="addRow('tbody')">add</button>
+</body>
+
+<script type="text/javascript">
+function addRow('tbody'){
+	let tRef = document.getElementById('tbody');
+	//테이블긑에 행 추가
+	let newRow = tRef.insertRow(-1);
+	//테이블에 셀 추가 인덱스0부터
+	let newCell = newRow.insertCell(0);
+	//테이블에 값추가
+	var val = prompt('Enter the new price ');
+	let newText = document.createTextNode(val);
+	newCell.appendChild(newText);
+}
+addRow('tbody');
+function appendNum() {
+	///tbody
+	var myBody = document.getElementById('tbody')
+	//tr
+	let myRow = myBody.insertRow(index)
+	while
+	var num1 = prompt('Enter the new price ');
+	 if(num1 != null) {
+		 var entry = document.createElement('td');
+		 entry.appendChild(document.createTextNode(num1));
+		 tbody.appendChild(entry);
+	 }
+	 //td 2
+	var num2 = prompt('Enter the new number ');
+	if(num2 != null) {
+		 var entry = document.createElement('td');
+		 entry.appendChild(document.createTextNode(num2));
+		 n.appendChild(entry);
+	 }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ul.newlist{/*list-style-type: armenian;*/ list-style-image: url("icon.jpg")}
+ol.olist{}
+
+
+</style>
+
+
+
+</head>
+<body>
+<ul class="newlist">
+<li>coffee</li>
+<li>tea</li>
+<li>cocoa</li>
+</ul>
+<ol class="olist">
+<li>coffee</li>
+<li>tea</li>
+<li>cocoa</li>
+</ol>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 이름, 나이 -->
+<!--  값과 함께 화면 이동 -->
+<!-- a -->
+<a href="NewFile.jsp?name=홍길동&age=24">NewFile.jsp로 이동</a>
+<!-- form name 활용-->
+<!-- 데이터 입력창에 입력받은 값 넘겨주기 -->
+<form action="NewFile.jsp">
+이름:<input type="text" name="name">
+<br>
+나이:<input type="text" name="age">
+<br>
+<input type="submit" value="이동">
+</form>
+<!-- java script id 활용-->
+
+이름:<input type="text" id="name">
+<br>
+나이:<input type="text" id="age">
+<br>
+<button type="button" onclick="btn()">이동</button>
+
+<script type="text/javascript">
+function btn() {
+	//location.href = "NewFile.jsp?name=일지매&age=22";
+	
+	let name = document.getElementById("name").value;
+	let age = document.getElementById("age").value;
+	
+	location.href = "NewFile.jsp?name=" + name + "&age=" + age;
+}
+
+
+</script>
+
+
+
+</body>
+</html>

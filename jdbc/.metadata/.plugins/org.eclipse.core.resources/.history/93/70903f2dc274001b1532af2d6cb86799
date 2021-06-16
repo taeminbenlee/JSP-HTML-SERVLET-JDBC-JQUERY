@@ -1,0 +1,54 @@
+package dao;
+
+import java.util.Scanner;
+
+import cls.insertClass;
+
+// Singleton 
+public class AccountDao {	// DB와 대화하는 클래스
+		private static AccountDao dao = null;
+		
+		private AccountDao() {
+			
+		}
+		
+		public static AccountDao getInstance() {
+			if(dao==null) {
+				dao = new AccountDao();
+			}
+			return dao;
+		}
+		Scanner sc = new Scanner(System.in);
+		public void insert() {
+			insertClass ic =new insertClass();
+			
+			int count = ic.insert();
+			System.out.println("날짜: ");
+			String dateTime = sc.next();
+			System.out.println("용도: ");
+			String title = sc.next();
+			System.out.println("분류(수입1, 지출2): ");
+			String classify = sc.next();
+			System.out.println("금액: ");
+			int money = sc.nextInt();
+			System.out.println("메모: ");
+			String memo= sc.next();
+			
+			if(count == 1) {
+				System.out.println("데이터가 " + count + "개 추가되었습니다");
+			} else {
+				System.out.println("데이터가 추가되지 않았습니다.");
+			}
+			
+		}
+		
+		
+		public void delete() {
+			
+		}
+		
+		public void select() {
+			
+		}
+		
+}

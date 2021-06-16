@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{text-align: center;}
+table, th, td {
+  border: 1px solid black;
+}
+th{background-color: gray;}
+</style>
+</head>
+<body>
+<h2>배열의 연산</h2>
+<div id="parent">
+<table style="width: 50%">
+	<thead>
+		<tr>
+			<th>첨자</th>
+			<th>a</th>
+			<th>b</th>
+			<th>axb을 계산</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>0</th>
+			<td><input type="text" id="num1"></td>
+			<td><input type="text" id="num2"></td>
+			<td><input type="button" value="계산결과" onclick="result()"></td>
+		</tr>
+		<tr>
+			<th>1</th>
+			<td id="num3">12</td>
+			<td id="num4">14</td>
+			<td><input type="button" value="계산결과"></td>
+		</tr>
+		<tr>
+			<th>2</th>
+			<td id="num5">18</td>
+			<td id="num6">65</td>
+			<td><input type="button" value="계산결과"></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<script type="text/javascript">
+function result() {
+	let number1;
+	let number2;
+	number1 = parseInt(document.getElementById("num1").value);
+	number2 = parseInt(document.getElementById("num2").value);
+	let result;
+	result = number1 * number2;
+	alert(result);
+}
+
+</script>
+</body>
+</html>

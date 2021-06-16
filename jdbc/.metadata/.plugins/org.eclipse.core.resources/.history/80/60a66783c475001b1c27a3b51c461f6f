@@ -1,0 +1,19 @@
+package cls;
+
+
+
+
+import dao.AccountDao;
+
+
+public class BalanceClass {
+	public void balance() {
+	AccountDao dao;
+	dao = AccountDao.getInstance();
+	
+	String result = dao.accountBalance();
+	System.out.println(result);
+	} 
+	
+	
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<div id="demo" style="background-color: ">Hello JS CSS</div>
+<button type="button" onclick="func()">적용</button>
+
+<script type="text/javascript">
+function func() {
+	//attribute 안의 property접근
+	//1.오브젝트로 div를 받는다 (통으로 안의 내용 다 가져오기)
+	let obj = document.getElementById('demo');
+	//2. property접근
+	obj.style.color = 'white';
+	obj.style.backgroundColor = '#0000ff';
+	obj.style.textAlign = 'center';
+	obj.style.borderStyle = "double";
+	obj.style.borderColor = "red";
+}
+
+</script>
+
+</body>
+</html>

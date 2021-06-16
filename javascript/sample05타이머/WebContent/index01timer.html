@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="" name="frm">
+	<div align="center">
+	<strong>라면 타이머</strong>
+	<br><br>
+	<!-- 실시간으로 함수 호출하는것 == onchange -->
+	<select id="selid" name="myChoice" onchange="">
+		<option value="180">원하는 시간을 선택해 주십시오(기본 3분)</option>
+		<option value="300">5분</option>
+		<option value="180">3분</option>
+		<option value="150">2분30초</option>
+		<option value="120">2분</option>
+		<option value="60">1분</option>
+		<option value="30">30초</option>
+	</select>
+	
+	<input type="button" value="Timer Start" onclick="noodle()">
+	<br><br>
+		<!-- span 태그는 별 의미는 없다 그냥 div처럼 담는 것 -->
+	<span id="countdown">time select</span>	
+	<br><br>
+	<!-- 닫기, 윈두우 기본함수 클로즈 사용 -->
+	<button type="button" onclick="window.close()">close</button>	
+	
+	</div>
+</form>
+
+<script type="text/javascript">
+//계산을 위한 변수 선언및 초기화
+let count = 0;
+let time = 0;
+let choice = 0;
+
+function noodle() {
+	//매번 실행시 타이머 초기화를 위한 함수
+	clearInterval(time);
+	//select의 value 값 가져오기
+	let value = document.getElementById('selid').value;
+	count = value;
+	//alert(value); 확인용
+	//다큐먼트 안의 frm아느이 myChoice의 번지수 가져오기
+	choice = document.frm.myChoice.selectedIndex;
+	//alert(choice);
+	//선택되어진 값을 확인후 값을 받아오기 (받은번지수를 넣어서 해당하는 값을 받는다)
+	count = parseInt(document.frm.myChoice.options[choice].value);
+	//alert(count);
+	//타임 리턴받고 타이머 함수 호출
+	time = setInterval('myTimer()',1000);
+}
+//타이머 함수
+function myTimer() {
+	count = count - 1;
+	
+	document.getElementById('countdown').innerHTML = 
+		"완료까지 <b>"+count+"</b>초 남았습니다";
+		if(count==0){
+			clearInterval(time);
+			//alert('시간이 완료되었습니다');
+			//알람 소리 설정
+			let audio = new Audio('AlarmClockBell.wav');
+			audio.play();
+		}
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- table: row(행), column(열)
+		
+		열
+		1	1	1 행
+		2	2	2
+		3	3	3
+<tr> == 행
+<td> == 행에 속하는 각각의 데이터 즉, 열
+ -->
+ 
+ <table border="1">
+ <tr>
+ <td>번호</td><td>성</td><td>이름</td><td>나이</td>
+ </tr>
+ 
+ <tr>
+  <td>1</td><td>홍</td><td>길동</td><td>24</td>
+ </tr>
+ 
+ <tr>
+  <td>2</td><td>성</td><td>춘향</td><td>16</td>
+ </tr>
+ 
+ </table>
+ 
+ 
+ 
+</body>
+</html>

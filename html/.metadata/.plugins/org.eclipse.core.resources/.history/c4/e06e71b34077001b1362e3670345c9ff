@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+ background: url(red01.png) no-repeat center center fixed;
+ -moz-background-size: cover;
+}
+
+</style>
+</head>
+<body>
+
+<div id=fullScr>
+
+</div>
+
+</body>
+</html>

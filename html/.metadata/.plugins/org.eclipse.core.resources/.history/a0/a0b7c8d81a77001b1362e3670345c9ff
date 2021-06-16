@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body{color: aqua; text-align: center;}
+h1{color: fuchsia; text-decoration: underline;}
+p{
+	color: rgb(0,0,255); text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+<h1>h1 tag</h1>
+<p>여기는 p tag입니다</p>
+
+</body>
+</html>

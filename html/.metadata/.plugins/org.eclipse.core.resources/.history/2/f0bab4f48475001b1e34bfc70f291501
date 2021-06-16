@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body style="background-color: orange">
+<!-- 
+attribute(속성)
+<태그명 속성1="값" 속성2="값">문자열</태그명> 
+
+property(특성)
+<태그명 속성="특성: 값">문자열</태그명> 
+
+
+-->
+<h1 style="color: navy">h1 tag입니다요</h1>
+<h2 style="background-color: #00ff00">h2 tag입니다</h2>
+<h3 style="font-family: times new roman">h3 tag입니다</h3>
+<h4 style="font-size: 300%">h4 tag</h4>
+</body>
+</html>

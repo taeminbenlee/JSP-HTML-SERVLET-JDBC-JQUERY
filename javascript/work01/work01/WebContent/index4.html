@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>체육관 이용 요금 1</h1>
+기본 사용료(4시간)40,800원
+<br><br>
+
+<input type="checkbox" onclick="sum(0)" id="ch1" value="20000">야간조명(20,000원)
+<br>
+<input type="checkbox" onclick="sum(1)" id="ch2" value="4000">배구 네트 x 2장(4,000원)
+<br>
+<input type="checkbox" onclick="sum(2)" id="ch3" value="5000">배구공 x 10(20,000원)
+<br>
+<br>
+합계금액:<input type="text" id="t1" value="40800">원정
+
+<script type="text/javascript">
+
+let total = parseInt( document.getElementById("t1").value );
+
+function sum( num ) {
+	
+	if(num == 0){
+		let ch1 = document.getElementById('ch1').checked;	// true/false
+		// alert(ch1);
+		let value = parseInt( document.getElementById('ch1').value );
+		
+		if(ch1 == true){
+			total = total + value;
+		}
+		else{
+			total = total - value;
+		}
+		
+		document.getElementById("t1").value = total;		
+	}
+	else if(num == 1){
+		
+	}
+	else if(num == 2){
+		
+	}
+	
+}
+</script>
+
+<br><br>
+
+<h1>체육관 이용 요금 2</h1>
+기본 사용료(4시간)40,800원
+<br><br>
+
+<form name="frm">
+
+	<input type="checkbox" onclick="sum_1(0)" id="ch_1" value="20000">야간조명(20,000원)
+	<br>
+	<input type="checkbox" onclick="sum_1(1)" id="ch_2" value="4000">배구 네트 x 2장(4,000원)
+	<br>
+	<input type="checkbox" onclick="sum_1(2)" id="ch_3" value="5000">배구공 x 10(20,000원)
+	<br>
+	<br>
+	합계금액:<input type="text" id="t_1" value="40800">원정
+
+</form>
+
+<script type="text/javascript">
+
+let arr = new Array(3);
+arr[0] = parseInt( document.getElementById("ch_1").value );
+arr[1] = parseInt( document.getElementById("ch_2").value );
+arr[2] = parseInt( document.getElementById("ch_3").value );
+
+let _total = parseInt( document.getElementById("t_1").value );
+
+function sum_1( num ) {
+	
+	if(document.frm.elements[num].checked == true){
+	//	alert(num + "번째 첵크박스 클릭");
+		_total = _total + arr[num];	
+	}else{
+		_total = _total - arr[num];
+	}
+	
+	document.frm.elements[3].value = _total;
+	
+}
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

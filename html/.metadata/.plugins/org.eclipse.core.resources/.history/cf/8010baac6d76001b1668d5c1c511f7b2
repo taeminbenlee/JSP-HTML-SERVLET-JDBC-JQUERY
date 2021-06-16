@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="background-color: black; text-align: center;">
+<font style="font-size: 300%; text-align: center; color: white">
+타히티의 사진
+</font><br><br>
+<font style="font-size: 100%; text-align: center; color: white">
+다음 사진을 클릭하면 확대사진을 볼 수 있습니다.
+</font><br><br><br>
+<img width=140 height= 100 alt="" src="./images/tahiti01.jpg">
+
+<br><br>
+<iframe src="table.html" width=300 height= 200></iframe>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>환영합니다</h1>
+<p>현재 시각은
+<input type="text" id="text" size="50">
+입니다.</p>
+<script type="text/javascript">
+
+
+	let d = new Date();
+	
+	document.getElementById("text").innerHTML = d.getHours(); //시간
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package cls;
+
+import java.util.ArrayList;
+
+import dao.AccountDao;
+import dto.accountDto;
+
+public class BalanceClass {
+	public void balance() {
+	AccountDao dao;
+	dao = AccountDao.getInstance();
+	int count = dao.accountBalance();
+	System.out.println(count);
+}
+}

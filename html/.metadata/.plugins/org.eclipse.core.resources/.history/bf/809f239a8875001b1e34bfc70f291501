@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+tag안에 사용하는 tag
+
+<p>보통의 단락태그</p>
+
+<p><b>bold</b> text</p>
+<!-- 둘다 bold임 -->
+<p><strong>strong</strong></p>
+
+<p><i>이텔릭</i> 텍스트</p>	
+
+<p>나는 <em>성공</em>할 것 입니다</p>
+
+</body>
+</html>

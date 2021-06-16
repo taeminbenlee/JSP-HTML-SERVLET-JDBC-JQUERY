@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.fullScr{width: 800px; height: 500px; border: 4px solid #79D5FF;margin: auto;}
+.header{width: 780px;height: 50px; border: 2px solid teal; margin: 10px;
+		background-color: #FF9222; padding-top: 24px; padding-left: 20px;  }
+</style>
+</head>
+<body>
+<div>
+	<div class=fullScr>
+		<div class=header>
+		<img alt="" src="exq.gif"> 참고 이메시지에 주의 하세요!
+		</div>
+	</div>
+</div>
+</body>
+</html>

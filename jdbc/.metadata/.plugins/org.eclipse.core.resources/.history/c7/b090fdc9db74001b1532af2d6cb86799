@@ -1,0 +1,73 @@
+package cls;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import dao.AccountDao;
+import db.DBClose;
+import db.DBConnection;
+import dto.accountDto;
+
+public class insertClass {
+	/*
+	private String dateTime;
+	private String title;
+	private String classify;
+	private int money;
+	private String memo;
+	*/
+	//String dateTime, String title, String classify, int money, String memo
+	public int insert(String dateTime, String title, String classify, int money, String memo) {
+		
+       
+        int count=0;  
+       
+		String sql = " INSERT INTO accountbook(dateTime, title, classify, money, memo) "
+				+ " Values('"+dateTime + "','" + title + "','" + classify + "'," + money + ",'"+ memo + "') ";
+		
+		System.out.println(sql);
+		//2. DB Connection
+		Connection conn = DBConnection.getConnection();
+		//2.1 Statement(java.sql)
+		Statement state = null;
+		
+		
+		//3. DB Processing
+		//3.1 state = conn.createStatement(); 에서 try and catch
+		try {
+			state = conn.createStatement();
+		//3.1.1 state.executeUpdate(sql)을 통해 String sql이 실행되도록한다
+			count = state.executeUpdate(sql);
+			
+			System.out.println("성공적으로 추가되었습니다.");
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		//3.2 종료를 위해 finally
+		} finally {
+		//4. DB Close
+			try {
+			if(state != null) {
+					state.close();
+			} 
+			if(conn != null) {
+				conn.close();
+			}
+			
+			} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+			}
+		}
+		return count;
+		
+	
+}
+}
+
+

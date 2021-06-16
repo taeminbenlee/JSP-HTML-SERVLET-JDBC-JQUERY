@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+<!-- font, div -->
+<font size = "1" color="blue">font size:1, font color:blue</font>
+<br>
+<br>
+<font size ="2" color="#0000ff">font size:2, font color:#0000ff</font>
+<br>
+<br>
+<pre>
+국내 신종 코로나바이러스 감염증(코로나19) <font size="5" color="purple">'3차 대유행'</font>이 지속하는 가운데 23일 신규 확진자 수는 300명대 중반을 나타냈다.
+
+전날보다 소폭 증가했으나 이틀 연속 300명대를 유지했다.
+
+다만 보통 주말·휴일의 검사건수 감소 영향이 주 초반까지 이어지고 중반부터 증가하는 흐름을 보이는 만큼 확진자 규모는 다시 커질 수 있는 상황이다. 
+실제 일가족·대학교·교회 등을 고리로 전국 곳곳에서 집단감염이 이어지고 있다.
+
+정부는 확진자 발생 상황을 주시하면서 내주부터 적용할 거리두기 조정안을 이르면 주말 직전 발표할 예정이다.
+
+</pre>
+
+<!-- div : 자체만으로는 의미가 없다
+			범위를 묶는데 많이 사용
+			제일 많이 사용된다
+			 -->
+			 
+<div align="center">
+	<font size="6">6 size font</font>
+	<h3>h3 tag</h3>
+	<p>p tag</p>
+</div>
+
+<div style="border-style: solid;border-color: red; 
+			margin-left: 80px; margin-right: 80px;
+			padding-top: 120px">
+	<h1>이것은 제목입니다.</h1>
+	<p> 여기는 내용입니다.</p>
+</div>
+
+
+
+</body>
+</html>

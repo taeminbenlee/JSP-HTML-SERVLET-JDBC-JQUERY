@@ -1,0 +1,65 @@
+package cls;
+
+import java.sql.Connection;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+import db.DBConnection;
+
+
+public class insertClass {
+	/*
+	private String dateTime;
+	private String title;
+	private String classify;
+	private int money;
+	private String memo;
+	*/
+	//String dateTime, String title, String classify, int money, String memo
+	public int insert(String dateTime, String title, String classify, int money, String memo) {
+		
+       
+        int count=0;  
+       
+		String sql = " INSERT INTO accountbook(dateTime, title, classify, money, memo) "
+				+ " Values('"+dateTime + "','" + title + "','" + classify + "'," + money + ",'"+ memo + "') ";
+		
+		System.out.println(sql);
+		
+		Connection conn = DBConnection.getConnection();
+	
+		Statement state = null;
+	
+	
+		try {
+			state = conn.createStatement();
+		
+			count = state.executeUpdate(sql);
+			
+			System.out.println("성공적으로 추가되었습니다.");
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		
+		} finally {
+		
+			try {
+			if(state != null) {
+					state.close();
+			} 
+			if(conn != null) {
+				conn.close();
+			}
+			
+			} catch (SQLException e) {
+			
+					e.printStackTrace();
+			}
+		}
+		return count;
+		
+	
+}
+}
+
+

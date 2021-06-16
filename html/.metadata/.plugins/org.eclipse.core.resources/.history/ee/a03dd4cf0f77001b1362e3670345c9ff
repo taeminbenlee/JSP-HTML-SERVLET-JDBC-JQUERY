@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+
+
+</head>
+<body>
+
+<p class="p1">p tag size 1 cm</p>
+<p class="p2">p tag size 1 mm</p>
+<p class="p3">p tag size 1 inch</p>
+<p class="p4">p tag size 1 pt</p>
+<p class="p5">p tag size 1 pc</p> <!-- 1 파이카 = 12pt -->
+<p class="p6">p tag size 24 px</p>
+<p class="p7">p tag size 1 em</p>
+
+
+
+</body>
+</html>

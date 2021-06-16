@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  
+
+	list : 목록
+	 1.
+	 2.
+	 3.
+	 즉 로우만 있는것
+
+<ul> unordered list(순서없는 목록) dot로 표시됨
+style="list-style-type: disc
+style="list-style-type: circle
+style="list-style-type: square
+style="list-style-type: none
+ -->
+ 
+ <ul>
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: disc;">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: circle">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: square">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: none">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+ 
+ <hr><hr>
+ 
+ <ul style="list-style-type: star">
+	 <li>coffee</li>
+	 <li>tea</li>
+	 <li>juice</li>
+ </ul>
+</body>
+</html>

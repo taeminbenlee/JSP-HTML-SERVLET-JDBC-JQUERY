@@ -1,0 +1,13 @@
+package main;
+
+import db.DBConnection;
+
+public class NewMainClass {
+
+	public static void main(String[] args) {
+		DBConnection dc = new DBConnection();
+		dc.getConnection();
+
+	}
+
+}

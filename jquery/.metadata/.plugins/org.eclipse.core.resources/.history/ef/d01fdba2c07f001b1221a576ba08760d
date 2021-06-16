@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>summary</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+<button type="button" id="btn1">실행1</button>
+
+<p id="q01">hello jquery</p>
+<p id="q02">hello jquery</p>
+<script type="text/javascript">
+$("#btn1").click(function () {
+	// font color
+	$("#q01").css("color", "#ff0000");
+	// font color, background color
+	$("#q02").css({"color":"#0000ff", "background-color":"#ffff00"});
+	
+});
+
+</script>
+<button type="button" id="btn2">실행2</button>
+
+<p id="q03">hello jquery</p>
+<p id="q04">Naver Home Page</p>
+<script type="text/javascript">
+$("#btn2").click(function () {
+	//q03안이 텍스트만 바꾼다
+	//$("#q03").text("헬로우 제이쿼리");
+	$("#q03").html("<b>헬로우</b> 제이쿼리");
+	$()
+});
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="checkMessage()">
+
+<!-- onload -->
+<p id="p1"></p>
+
+<script type="text/javascript">
+function checkMessage() {
+	document.getElementById('p1').innerHTML = 'checkMessage() 호출';
+	
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>

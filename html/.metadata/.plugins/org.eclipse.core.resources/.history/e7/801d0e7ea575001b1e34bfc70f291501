@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 1 -->
+<pre>
+타히티의 풍경
+남태평양 타히티 (프랑스령 폴리네시아)는 100여개의 섬으로 구성되어 있습니다.
+남쪽 섬의 낙원이라고 부르기에 걸맞게 세계적으로 유명한 관광지이기도 합니다
+</pre><br>
+<img alt="이미지 없음" width="300" height="170" src="./images/tahiti01.jpg"><br>
+<pre>
+포라포라 섬에는 수상의 호텔이 있습니다.
+</pre>
+<br>
+<hr><hr>
+<!-- 2 -->
+
+</body>
+</html>

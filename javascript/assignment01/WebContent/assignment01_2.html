@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#q1{font-size: 16pt; font-weight: bold;}
+#q2{font-size: 14pt;}
+</style>
+</head>
+<body>
+<font id=q1>문제</font>
+<br><br>
+<font id=q2>한국에서 제일 높은 산은?</font>
+답:<input type="text" id="answer">
+<button type="button" id="answer" onclick="func()">해답</button>
+<script type="text/javascript">
+function func(){
+	let answer = document.getElementById('answer').value;
+	if(answer == ""){
+		alert('정답을 기입해주세요');
+	}else if (answer == "한라산"){
+		alert('정답 한라산');
+	}else {
+		document.getElementById('answer').value = "";
+		alert('정답이 아닙니다');
+	}
+	
+}
+</script>
+</body>
+</html>

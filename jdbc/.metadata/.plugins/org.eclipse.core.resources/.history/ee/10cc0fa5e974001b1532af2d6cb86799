@@ -1,0 +1,12 @@
+CREATE TABLE AccountBook(
+	dateTime date,
+	title VARCHAR2(30),
+	classify VARCHAR2(30),
+	money number,
+	memo VARCHAR2(30)	
+);
+
+DROP TABLE AccountBook;
+
+
+SELECT * FROM AccountBook;

@@ -1,0 +1,174 @@
+package dao;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import cls.deleteClass;
+import cls.insertClass;
+import cls.printAllClass;
+import cls.selectDateClass;
+import cls.selectUseClass;
+import cls.updateClass;
+import db.DBClose;
+import db.DBConnection;
+import dto.accountDto;
+
+
+
+
+
+
+// Singleton 
+public class AccountDao {	// DB와 대화하는 클래스
+		private static AccountDao dao = null;
+		
+		private AccountDao() {
+			DBConnection.initConnection();
+		}
+		
+		public static AccountDao getInstance() {
+			if(dao==null) {
+				dao = new AccountDao();
+			}
+			return dao;
+		}
+		Scanner sc = new Scanner (System.in);
+		
+		public boolean insert(accountDto dto) {
+			String sql = " INSERT INTO AccountBook(dateTime, title, classify, money, memo) "
+					+ " Values( Sysdate, ?, ?, ?, ?)";
+			System.out.println(sql);
+			
+			Connection conn = DBConnection.getConnection();
+	        PreparedStatement psmt = null;
+	       int count = 0;
+			
+			
+			try {
+				psmt = conn.prepareStatement(sql);
+				psmt.setString(1, dto.gettitle());
+				psmt.setString(2, dto.getClassify());
+				psmt.setInt(3, dto.getMoney());
+				psmt.setString(4, dto.getMemo());
+				
+				count = psmt.executeUpdate();
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return count>0?true:false;
+		
+			
+	}
+
+		
+		public void delete() {
+			DBConnection.initConnection();
+			
+			deleteClass dt = new deleteClass();
+			
+			System.out.println("삭제할 데이터의 날짜: ");
+			String dateTime = sc.next();
+			boolean b = dt.delete(dateTime);
+			if(b == true) {
+				System.out.println("정상 처리");
+			}
+
+		}
+		
+		public void select() {
+			selectDateClass sdc = new selectDateClass();
+			String dateTime = sc.next();
+			
+			ArrayList<accountDto> list = sdc.searchDate(dateTime);
+			for (int i = 0; i < list.size(); i++) {
+				if(list != null) {
+				accountDto d = list.get(i);
+				
+				System.out.println(d.toString());
+				}
+		}
+		
+	}
+		public ArrayList<accountDto> getTitle(String title){
+			
+			//1. 쿼리
+			String sql = " SELECT * "
+					+ " FROM AccountBook "
+					+ " WHERE TITLE = ? ";
+			System.out.println(sql);
+			//2. connection
+			Connection conn = DBConnection.getConnection();
+			PreparedStatement pstm = null;
+			ResultSet rs = null;
+			ArrayList<accountDto> list = new ArrayList<accountDto>();
+			
+			//3. processing
+			
+			try {
+				pstm = conn.prepareStatement(sql);
+				pstm.setString(1, title);
+				rs = pstm.executeQuery();
+				
+				while(rs.next()) {
+					String dateTime = rs.getString("dateTime");
+					title = rs.getString("title");
+					String classify = rs.getString("classify");
+					int money = rs.getInt("money");
+					String memo = rs.getString("memo");
+					
+					accountDto dto = new accountDto(dateTime, title, classify, money, memo);
+					list.add(dto);
+				}
+				
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			} finally {
+			//4. close	
+				DBClose.close(conn, pstm, rs);
+			}
+			return list;
+		}
+
+		public void update() {
+			updateClass ut = new updateClass();
+			System.out.println("수정할 용도:");
+			String title = sc.next();
+			System.out.println("금액: ");
+			int money = sc.nextInt();
+			
+			int count = ut.Update(title, money);
+			if(count == 1) {
+				System.out.println("정상적으로 수정됨");
+			} 
+		}
+
+		public void printAll() {
+			printAllClass pac = new printAllClass();
+			
+			
+			ArrayList<accountDto> list = new ArrayList<accountDto>();
+			for (int i = 0; i < list.size(); i++) {
+				if(list != null) {
+				accountDto d = list.get(i);
+				
+				System.out.println(d.toString());
+				}
+			}
+			
+			
+		}
+
+		public void accountBalance() {
+			// TODO Auto-generated method stub
+			
+		}
+}

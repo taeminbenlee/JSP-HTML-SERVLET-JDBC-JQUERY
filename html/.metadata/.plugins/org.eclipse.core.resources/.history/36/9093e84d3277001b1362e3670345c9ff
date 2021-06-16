@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+#fullScr{width: 600px;height: 600px;}
+#leftScr{width: 200px; height: 600px; float: left;}
+#midScr{width: 200px; height: 600px; float: left;}
+#rightScr{width: 200px; height: 600px; float: left;}
+#leftTop{width: 200px;height: 500px;background-color: red;}
+#leftBot{width: 200px;height: 100px;background-color: yellow;}
+#midTop{width: 200px;height: 200px;background-color: blue;}
+#midBot{width: 200px;height: 400px;background-color: green;}
+#rightTop{width: 200px;height: 300px;background-color: black;}
+#rightBot{width: 200px;height: 300px;background-color: pink;}
+</style>
+</head>
+
+<body>
+<div align="center">
+<div id=fullScr>
+	<div id=leftScr>
+		<div id=leftTop>
+		</div>
+		<div id=leftBot>
+		</div>
+	</div>
+	<div id=midScr>
+		
+		<div id=midTop>
+		</div>
+		<div id=midBot>
+		</div>
+	</div>
+	<div id=rightScr>
+		<div id=rightTop>
+		</div>
+		<div id=rightBottom>
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

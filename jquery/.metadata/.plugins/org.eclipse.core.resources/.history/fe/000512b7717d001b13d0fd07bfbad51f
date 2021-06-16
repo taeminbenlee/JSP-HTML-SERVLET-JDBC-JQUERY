@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+<p>The jQuery .class selector finds elements with a specific class.</p>
+<p>followed by the name of the class:</p>
+
+<ol>
+	<li>사과</li>
+	<li>배</li>
+	<li>바나나</li>
+</ol>
+
+<select id="food">
+	<option>햄버거</option>
+	<option>피자</option>
+	<option>치킨</option>
+</select>
+
+
+<button type="button" id="append">추가(뒤)</button>
+<button type="button" id="prepend">추가(앞)</button>
+<script type="text/javascript">
+$(function () {
+	// p tag 추가
+	$('#append').click(function name() {
+	//	$('p').append("<br>append 추가 요소 입니다.")
+	//	$('ol').append("<li>포도</li>");
+	$('#food')append(<option>스테이크</option>)
+	});
+	
+	$('#prepend').click(function name() {
+	//	$('p').prepend("prepend 추가 요소 입니다.<br>")
+	//	$('ol').prepend("<li>딸기</li>");
+		$('#food')prepedn(<option>스테이크</option>)
+	});
+	
+	
+});
+
+</script>
+
+
+
+</body>
+</html>

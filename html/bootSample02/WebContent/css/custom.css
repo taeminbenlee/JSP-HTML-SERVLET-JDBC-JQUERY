@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* 페이지안의 링크 위치조정 */
+section {
+  margin-top: -60px;
+  padding-top: 60px;
+}

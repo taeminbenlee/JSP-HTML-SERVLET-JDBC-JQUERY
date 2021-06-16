@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<div id="q30">
+ <img src="./83858_1000.jpg">
+</div>
+<ul class="eee">
+ <li>리스트①</li>
+ <li>리스트②</li>
+ <li>리스트③</li>
+ <li>리스트④</li>
+ <li>리스트⑤</li>
+ <li>리스트⑥</li>
+</ul>
+<p id="q31"></p>
+
+
+
+
+
+<script type="text/javascript">
+/* id 명 "q30"요소에 크기가 큰 이미지를 배치하고 그 페이지가 로드되면
+이미지 크기를 폭 500px, 높이 300px로 사이즈를 지정하십시오. 
+
+브라우저 창 크기가 변경된 시점에서 Q30.에 지정된 이미지 크기를 폭 50px 높이
+30px 사이즈를 지정하십시오.(앞 화면에)
+
+class 명 eee의 ul 요소의 목록의 수를 취득 해, 
+id 명 q31 요소 li 태그의 수는 n 개로 표시하라
+*/
+
+$("#q30 img").width(500);
+$("#q30 img").height(300);
+
+$(document).ready(function () {
+    $(window).resize(function() {
+        updateImageSize();
+    });
+});
+function updateImageSize() {
+            $("#q30 img").css({"width": "50px", "height": "30px"}); 
+};
+
+
+
+</script>
+
+</body>
+</html>

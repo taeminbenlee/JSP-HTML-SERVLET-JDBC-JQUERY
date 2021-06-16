@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ 
+        th, td, p, input {
+            font:14px Verdana;
+        }
+        table, th, td 
+        {
+            border: solid 4px #DDD;
+            border-collapse: collapse;
+            padding: 6px 9px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<form action="hello" id="frm" method="post">
+<table>
+	<tr>
+		<td>이름:</td>
+		<td><input type="text" id="yourName" name="yourName" size="20" placeholder="이름"></td>
+	</tr>
+	<tr>
+		<td>연령대:</td>
+		<td>
+			<select name="age">
+				<option value="10">10대</option>
+				<option value="20" selected>20대</option>
+				<option value="30">30대</option>
+				<option value="40">40대</option>
+				<option value="50">50대</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>성별</td>
+		<td><input type="radio" name="gender"  value="male" checked="checked">
+				<label for="gender">남자</label>
+		</td>
+		<td><input type="radio" name="gender" value="female">
+				<label for="gender">여자</label>
+		</td>
+	</tr>
+	<tr>
+		<td>취미</td>
+		<td><input type="checkbox" name="hobby" value="playing game">
+				<label for="hobby">게임</label>
+		</td>		
+		<td><input type="checkbox" name="hobby" value="watching movie">
+				<label for="hobby">영화감상</label>
+		</td>
+		<td><input type="checkbox" name="hobby" value="shopping">
+				<label for="hobby">쇼핑</label>
+		</td>
+	</tr>
+</table>	
+<input type="submit" value="확인화면으로 진행" id="btn">	
+</form>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+	$(function() {
+	    $("*").focus(function () {
+	        $(this).css("background-color", "yellow");
+	    });
+	    $("*").blur(function () { 
+	        $(this).css("background-color", "white");
+	    });
+	    
+	    $("#btn").click(function() {
+	    	if( $("#yourName").val() == ''){
+	    	$("#yourName").prop('required',true);
+	    	return;
+	    	}
+	    	$("#frm").submit();
+	    });
+	});
+	
+	
+});
+</script>  
+
+</body>
+</html>

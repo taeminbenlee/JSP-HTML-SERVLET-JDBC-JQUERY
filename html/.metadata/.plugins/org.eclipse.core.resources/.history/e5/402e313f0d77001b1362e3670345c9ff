@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	CSS Cascading Style Sheet
+	문자의 컬러, 종류, 형태 등을 지정
+	배경화면 이미지, 컬러 등을 지정
+	테두리 넣기 
+	각종 tag에 이미지 형태나 라인 형태로 설정
+	
+
+ -->
+
+<p style="font-size: 10pt">this is sample text</p>
+
+
+
+</body>
+</html>

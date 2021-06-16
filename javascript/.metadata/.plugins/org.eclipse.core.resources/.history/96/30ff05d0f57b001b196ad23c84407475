@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>다음 생일가지 남은 일수</h2>
+<br>
+<p>다음 버튼을 클릭하여 생일을 입력하면,</p>
+<p>다음 생일까지 남은 일수를 볼 수 있습니다.</p>
+
+<input type="button" value="생일을 입력" id="countday" onclick = "addInput()">
+<span id="responce"></span>
+<p id="date"></p>
+<p id="count"></p>
+
+<script type="text/JavaScript">
+var countBox =1;
+var boxName = 0;
+function addInput()
+{
+     var boxName="textBox"+countBox; 
+     alert("생일입력 예: MMDD");
+		document.getElementById('responce').innerHTML+=
+		'<br/><input type="text" id="bday" value="'+boxName+'" "  /><br/>';
+     countBox += 1;
+     
+     document.getElementById('responce').innerHTML+='<input type="button" id="countday" value="계산" onclick="cal()">;
+}
+function cal() {
+    
+	
+    dateFuture = new Date;
+	
+	dateFuture = document.getElementById('bday').value;
+	
+	var today = new Date();
+	var month = date.getMonth() +1;
+	var day = date.getDay;
+	document.getElementById("date").innerHTML = month + day;
+	
+	let diff = parseInt(dateFuture) - parseInt(today);
+	document.getElementById("count").innerHTML = diff;
+}
+</script>
+
+</body>
+</html>

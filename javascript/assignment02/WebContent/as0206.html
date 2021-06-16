@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<h2>다음 생일까지 남은 일수</h2>
+<br>
+<p>다음 버튼을 클릭하여 생일을 입력하면,</p>
+<p>다음 생일까지 남은 일수를 볼 수 있습니다.</p>
+
+<input type="button" value="your birthdy" id="countday" onclick = "add()">
+<span id="responce"></span>
+남은일수<p id="days"></p>
+<p id="count"></p>
+<div id="div2"></div> 
+<script type="text/JavaScript">
+
+function add() {
+	alert("example: MMDD");
+	let month = prompt("month", '');
+	let day = prompt('day', '');
+	var myBirthday, today, bday, diff, days;
+	
+	myBirthday = [month,day];
+	today = new Date();
+	bday = new Date(today.getFullYear(),myBirthday[0]-1,myBirthday[1]);
+	if( today.getTime() > bday.getTime()) {
+	    bday.setFullYear(bday.getFullYear()+1);
+	}
+	diff = bday.getTime()-today.getTime();
+	days = Math.floor(diff/(1000*60*60*24));
+	alert(days+" days until birthday!");
+    
+}
+
+</script>
+
+</body>
+</html>

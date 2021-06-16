@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<!-- radio -->
+<ul>
+	<li><input type="radio" name="radioTest" value="사과" checked>사과</li>
+	<li><input type="radio" name="radioTest" value="바나나">바나나</li>
+	<li><input type="radio" name="radioTest" value="망고">망고</li>
+</ul>
+
+<button type="button" id="choice">선택</button>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#choice").click(function() {
+		// getter
+		var radioVal = $("input[name = radioTest]")
+		// setter
+	});
+});
+
+
+
+</script>
+<!-- checkbox -->
+</body>
+</html>

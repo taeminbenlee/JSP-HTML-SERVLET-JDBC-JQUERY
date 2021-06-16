@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body{border: 4px solid #79D5FF;}
+#header{margin: 100%; }
+
+</style>
+</head>
+<body>
+<div id=header>
+	<table id=tbsty>
+		<tr>
+			<th>분류</th><th>제품</th><th>설명</th>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

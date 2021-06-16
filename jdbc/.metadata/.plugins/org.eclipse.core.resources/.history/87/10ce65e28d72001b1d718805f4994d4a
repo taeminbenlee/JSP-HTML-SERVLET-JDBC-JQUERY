@@ -1,0 +1,54 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import db.DBClose;
+import db.DBConnection;
+import dto.UserDto;
+
+public class SelectByCondition {
+	
+	public ArrayList<UserDto> getUserList(int age){
+		
+		//1. 쿼리
+		String sql = " SELECT ID, NAME, AGE, JOINDATE "
+				+ " FROM USERTEST "
+				+ " WHERE AGE > ? ";
+		System.out.println(sql);
+		//2. connection
+		Connection conn = DBConnection.getConnection();
+		PreparedStatement pstm = null;
+		ResultSet rs = null;
+		ArrayList<UserDto> list = new ArrayList<UserDto>();
+		
+		//3. processing
+		
+		try {
+			pstm = conn.prepareStatement(sql);
+			pstm.setInt(1, age);
+			rs = pstm.executeQuery();
+			
+			while(rs.next()) {
+				String id = rs.getString("id");
+				String name = rs.getString("name");
+				age = rs.getInt("age");
+				String joindate = rs.getString("joindate");
+				
+				UserDto dto = new UserDto(id, name, age, joindate);
+				list.add(dto);
+			}
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} finally {
+		//4. close	
+			DBClose.close(conn, pstm, rs);
+		}
+		return list;
+	}
+}

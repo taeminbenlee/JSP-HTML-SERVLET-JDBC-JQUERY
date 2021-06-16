@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+<table border="1">
+<col width="50"><col width="80"><col width="50">
+<tr>
+	<th>번호</th><th>이름</th><th>나이</th>
+</tr>
+<tr>
+	<th>1</th><th>강감찬</th><th>30</th>
+</tr>
+<tr>
+	<th>2</th><th>이순신</th><th>40</th>
+</tr>
+<tr>
+	<th>3</th><th>왕건</th><th>50</th>
+</tr>
+</table>
+
+<p>p tag</p>
+<input type="button" id="btn" value="input">
+<script type="text/javascript">
+&(document).ready(function(){
+	
+	$('tr').mouseover(function(){
+		$(this).css('background','#00ff00')
+		
+	});
+	
+	
+});
+
+
+</script>
+
+
+</body>
+</html>

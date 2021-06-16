@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 이름, 나이 -->
+<!--  값과 함께 화면 이동 -->
+<!-- a -->
+<a href="NewFile.jsp?name=홍길동&age=24">NewFile.jsp로 이동</a>
+
+</body>
+</html>

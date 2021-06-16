@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Carousel(회전목마) -->
+<h1 class="text-center mb-5">component: carousel</h1>
+<h2 class="text-center mb-4">기본적인 사용 예</h2>
+
+<div class="container">
+	<div class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+				<!-- 1st slide -->
+			<img alt="" class="d-block w-100" src="http://placehold.it/1600x900&text=First slide">	
+				<!-- 2nd slide -->
+			<img alt="" class="d-block w-100" src="http://placehold.it/1600x900&text=Second slide">		
+				<!-- 3rd slide -->
+			<img alt="" class="d-block w-100" src="http://placehold.it/1600x900&text=Third slide">		
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="#000000" text="#ffffff">
+
+<h1>사진들</h1>
+
+<div align="center">
+<table>
+<tr>
+	<td>
+		<!-- <img alt="" src="images/pic01.jpg" name="photo" border="3"> -->	
+		<img alt="" src="https://img.cgv.co.kr/banner/main/mainbig_new_2.jpg" name="photo" border="3">		
+	</td>
+	
+	<td valign="top" style="padding-left: 10px">
+		<form name="frm">
+		
+		<select name="picture" onchange="photochange()">
+			<!-- 		
+			<option>사진들</option>
+			<option value="images/pic01.jpg">그림 1</option>
+			<option value="images/pic02.jpg">그림 2</option>
+			<option value="images/pic03.jpg">그림 3</option>	
+			<option value="images/pic04.jpg">그림 4</option>
+			 -->
+			<option>영화들</option>
+			<option value="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84273/84273_320.jpg">미나리</option>
+			<option value="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83946/83946_320.jpg">라야와 마지막 드래곤</option>
+			<option value="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84279/84279_320.jpg">극장판 귀멸의 칼날</option>
+			<option value="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000084/84277/84277_320.jpg">중경삼림 리마스터링</option>
+							
+		</select>
+		
+		</form>
+	</td>
+</tr>
+</table>
+</div>
+
+<script type="text/javascript">
+function photochange() {
+	
+	let selIndex = document.frm.picture.selectedIndex;
+//	alert(selIndex);
+
+	if(selIndex != 0){
+		document.photo.src = document.frm.picture.options[selIndex].value;
+	}
+	
+}
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+package jdbc;
+
+public class JdbcConnect {
+	
+	public JdbcConnect() {
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			System.out.println("Driver Loading Success");
+		} catch (ClassNotFoundException e) {
+			
+			System.out.println("Driver가 없습니다.");
+
+		}
+	}
+}

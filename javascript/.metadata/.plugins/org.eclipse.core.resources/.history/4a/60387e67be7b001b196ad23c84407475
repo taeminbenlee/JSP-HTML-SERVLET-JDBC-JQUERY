@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+10진수 -> 2, 8, 16 진수 변환
+<br>
+
+10진수: <input type="text" id="num" size="20">
+<button type="button" onclick="func()">변환</button>
+<br><br>
+결과:<p id=result></p>
+<script type="text/javascript">
+function func() {
+	//1.입력받은값 가져오기
+	let num = parseInt(document.getElementById("num").value);
+	//alert(num);
+	//2.1 2진수로 변환
+	let num2 = num.toString(2);
+	//2.2 8진수로 변환
+	let num8 = num.toString(8);
+	//2.3 16진수로 변환
+	let num16 = num.toString(16);
+	//3. 결과 
+	//3.1 result에 보내줄 변수 pObj생성
+	let pObj = document.getElementById("result");
+	//3.2 결과 도출
+	let result = '2진수' + num2 + ' 8진수' + num8 + ' 16진수' + num16;
+	//3.3 도출된 결과를 pObj에 담아준다
+	pObj.innerHTML = result;
+	
+	//2진수를 10진수로
+	var binary = "1101000";
+	var digit = parseInt(binary, 2);
+	console.log(digit);
+}
+
+
+</script>
+
+</body>
+</html>

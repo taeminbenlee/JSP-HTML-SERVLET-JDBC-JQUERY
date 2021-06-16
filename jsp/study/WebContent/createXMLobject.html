@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+
+<h2>The XMLHttpRequest Object</h2>
+
+<button type="button" onclick="loadDoc('ajax_info.txt', myFunction)">Change Content
+</button>
+</div>
+
+<script>
+//cFunction 은 밑에 다른 function을 파라미터로 넣어줄때 씀
+function loadDoc(url, cFunction) {
+	//create xml object xml 객체를 만드러줌
+  var xhttp;
+  //XMLHttpRequest == Update a web page without reloading the page.
+  xhttp=new XMLHttpRequest();
+  //onreadystatechange == 언제나 대기상태 값 바뀌면 적용시켜줌
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+	//demo에 xhttp가 불러드린 값을 넣어줌
+  document.getElementById("demo").innerHTML =
+  xhttp.responseText;
+}
+</script>
+</body>
+</html>

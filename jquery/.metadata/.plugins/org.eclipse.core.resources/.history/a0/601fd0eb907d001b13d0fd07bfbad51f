@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+<h2>이미지 자동 삽입</h2>
+다음 그림은 "jQuery"에 의해 자동 삽입되어 있습니다.
+<table border="1" id="example2">
+<tr>
+<td></td><td></td><td></td><td></td><td></td>
+</tr>
+
+
+</table>
+
+
+<button type="button" id="append">추가</button>
+</body>
+<script type="text/javascript">
+var image = [
+	["<img src=./images/photo_1.jpg>"],["./images/photo_2.jpg"], ["./images/photo_3.jpg"],["./images/photo_4.jpg"],["./images/photo_5.jpg"],
+["./images/photo_6.jpg"], ["./images/photo_7.jpg"], ["./images/photo_8.jpg"], ["./images/photo_9.jpg"] ];
+
+$(document).ready(function(){
+	//$( "tr:eq(1) td:eq(1)" ).html("데이터");
+	$('#append').click(function () {
+		for (i = 0; i < arr_image.length; i++) {
+			$('#example2').append("image[i]");
+			
+			}
+		}
+		
+	});
+        
+    
+    
+
+
+});
+</script>
+</html>

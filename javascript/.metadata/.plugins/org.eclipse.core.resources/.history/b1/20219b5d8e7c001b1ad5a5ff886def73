@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> <!-- root tag -->
+<head> <!-- child -->
+<meta charset="UTF-8"> <!-- child of head -->
+<title>Insert title here</title>
+</head>
+<body> <!-- child tag 2 -->
+
+<!-- 
+	DOM : Document Object Model
+		    각 tag를 접근하기 위한 object
+		    그 object를 접하기 위한 함수
+	
+-->
+	<!-- childNodes -->
+	<h3 id="intro">h3 tag id intro</h3>
+	<p id="demo">p tag id demo</p>
+	
+	<button type="button" onclick="func()">버튼</button>
+<script type="text/javascript">
+function func(){
+	/* let text = document.getElementById('intro').childNodes[0].nodeValue; */
+	let text = document.getElementById('demo').childNodes[0].nodeValue;
+	
+	alert(text);
+}
+
+</script>	
+<br><br>
+<select id="cars">
+	<option>benz</option>
+	<option>bmw</option>
+	<option>volvo</option>
+</select>
+<button type="button" onclick="cars()">자동차선택</button>
+<script type="text/javascript">
+function cars() {
+	let carName = document.getElementById('cars').childNodes;
+	alert(carName[0].text);
+}
+</script>
+</body>
+</html>

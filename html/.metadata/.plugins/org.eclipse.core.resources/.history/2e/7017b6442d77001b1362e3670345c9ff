@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#mainscreen{width: 100%; background-color: teal; height: 240px; margin: auto; float: left;}
+/*width는 퍼센트로도 할수있지만 height는 픽셀로..줄이거나 늘릴때 화면조정은 margin으로*/
+#one{width: 200px;height: 150px;background-color: gray;float: left;}
+#two{width:200px;height: 150px;background-color: aqua;float: left;}
+</style>
+
+</head>
+<body>
+
+
+<div id="mainscreen">
+main
+</div>
+<div id="one">
+screen one
+</div>
+<div id="two">
+screen two
+</div>
+
+</body>
+</html>

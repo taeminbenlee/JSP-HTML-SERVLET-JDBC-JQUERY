@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+<h2>Result of race#3</h2>
+<button type="button" id="man">남자부</button>
+<button type="button" id="woman">여자부</button>
+<table border="1">
+<tr>
+	<th>    </th>
+	<th>성명</th>
+	<th>시간</th>
+</tr>
+<tr>
+	<th>우승</th>
+	<td class="name"></td>
+	<td></td>
+</tr>
+<tr>
+	<th>2위</th>
+	<td class="name"></td>
+	<td></td>
+</tr>
+<tr>
+	<th>3위</th>
+	<td class="name"></td>
+	<td></td>
+</tr>
+<tr>
+	<th>4위</th>
+	<td class="name"></td>
+	<td></td>
+</tr>
+<tr>
+	<th>5위</th>
+	<td class="name"></td>
+	<td></td>
+</tr>
+
+</table>
+
+</body>
+<script type="text/javascript">
+let man = [
+	["",""],
+	["홍길동","01:02:81"],
+	["일지매","01:05:74"],
+	["임꺽정","01:07:93"],
+	["김철수","01:09:93"],
+	["이을용","01:11:23"]
+];
+let woman = [
+	["",""],
+	["김영희","01:06:11"],
+	["성춘향","01:11:34"],
+	["박주희","01:13:57"],
+	["이영애","01:14:34"],
+	["전지현","01:19:34"]
+];
+$(document).ready(function(){
+	$("#woman").click(function(){
+		for (i = 0; i < 6; i++) {
+			for (j = 0; j < 2; j++) {
+				$("tr:eq("+i+") td:eq(" +j+ ")").html(woman[i][j]);
+			}
+		}
+		
+	});
+	$("#man").click(function(){
+		for (i = 0; i < 6; i++) {
+			for (j = 0; j < 2; j++) {
+				$("tr:eq("+i+") td:eq(" +j+ ")").html(man[i][j]);
+			}
+		}
+		
+	});
+	$(".name").click(function() {
+		var value = $(this).val();
+		alert(value);
+		
+	});
+});
+</script>
+</html>

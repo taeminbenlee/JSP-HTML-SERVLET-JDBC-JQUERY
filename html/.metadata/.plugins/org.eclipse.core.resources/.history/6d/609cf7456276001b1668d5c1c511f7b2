@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div align = "center">
+	 <table border= 1>
+		 <col width="50"><col width="100"><col width="200">
+		 <tr>
+		 <th>크기</th><th>내용량</th><th>가격</th>
+		 </tr>
+</div>
+		 <tr>
+		  <th>1</th><td>홍</td><td>길동</td><td align="center">24</td>
+		 </tr>
+		 
+		 <tr>
+		  <th>2</th><td>성</td><td>춘향</td><td align="center">16</td>
+		 </tr>
+	 
+	 </table>
+ 
+</body>
+</html>

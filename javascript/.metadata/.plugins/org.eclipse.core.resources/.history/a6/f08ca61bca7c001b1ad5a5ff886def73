@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+다음 이차 방적식의 해를 구하고, 그 버튼을 클릭하십시오.
+<br>
+<h2>x^2-5x=-6</h2>
+<br><br>
+<input type="button" value="x=1">
+<input type="button" value="x=2">
+<input type="button" value="x=3">
+<input type="button" value="x=4">
+
+</body>
+</html>

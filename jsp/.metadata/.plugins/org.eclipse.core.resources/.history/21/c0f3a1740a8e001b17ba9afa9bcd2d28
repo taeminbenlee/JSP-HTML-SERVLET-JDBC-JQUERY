@@ -1,0 +1,25 @@
+package Controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class imageController extends HttpServlet {
+	ServletConfig mConfig = null;
+	final int BUFFER_SIZE = 8192;
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		mConfig = config;	// 업로드한 경로를 취득하기 위해서
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("imageController doGet");
+		
+	}
+}

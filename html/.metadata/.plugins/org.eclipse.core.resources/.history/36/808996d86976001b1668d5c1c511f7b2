@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<h2>고교수영부 기록</h2>
+	<table border="1">
+	<caption><ul style="list-style-type: square">
+		<li>수영 기록</li></ul></caption>
+		<col width="100"><col width="100"><col width="80"><col width="200">
+		 <tr style="background-color: #6495ED">
+			<th>종목</th>
+			<th>거리</th>
+			<th>성별</th>
+			<th>기록</th>
+		 </tr>
+	</table>
+
+</body>
+</html>

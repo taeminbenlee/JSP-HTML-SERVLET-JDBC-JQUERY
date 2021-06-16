@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+
+<h2>The XMLHttpRequest Object</h2>
+
+<button type="button">클릭</button>
+
+<br><br>
+<table id="myTable">
+   <thead></thead>
+   <tbody></tbody>
+</table>
+
+</body>
+<script>
+$(function(){
+	
+	$("button").click(function(){
+		
+		$.ajax({
+			url:"books.xml",
+			dataType: "xml",
+			success: function(xml) {
+                $(xml).find('xmldata').each(function(){
+                    $(this).find("book").each(function(){
+                    	var header = $('book');
+                        var body = $('');
+                        var hTr;
+                        $('#myTable thead').append(hTr = $('<tr>'));
+                        // Headers
+                        for (var h = 0; h < result.headers.length; h++) {
+                           hTr.append($('<th>', { text: result.headers[h] }))
+                        }
+                        //var values = $(this).text();
+                        //alert(values);
+                        $("#myTable").append($(this).find("aname").text() + "<br>");
+                        $("#myTable").append($(this).find("link").text() + "<br>");
+                        $("#myTable").append($(this).find("target").text() + "<br>");
+                    });
+                });
+            }
+		})
+		
+		
+		
+	})
+	
+})
+
+</script>
+
+
+
+</html>

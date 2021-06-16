@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+<!-- tag 추가 -->
+<button type="button" id="pbtn">p tag append</button>
+<button type="button" id="h3btn">h3 tag append</button>
+<button type="button" id="jqbtn">h3 tag append</button>
+<script type="text/javascript">
+$(function (){
+	$("#pbtn").click(function(){
+	
+		//html(text) 추가
+		let txt = "<p>html p tag append</p>";
+		$("body").append(txt);
+		//리스트 넣을땐 "<li><p>"와 같이 추가
+	});
+	$("#h3btn").click(function(){
+		
+		// java script 추가
+		let js = document.createElement("h3");
+		js.innerHTML = "js h3 tag append";
+		$("body").append(js);	
+		
+	});
+$("#jqbtn").click(function(){
+		
+	// jquery 추가
+		let jq = $("<p></p>").text("Jquery p tag append");
+		$("body").append(jq);	
+		/* let jq = $("<li></li>").html("Jquery p tag append");
+		$("body").append(jq); */ //리스트 추가 시는 리스트를 넣고 html
+		
+	});
+	
+});
+</script>
+
+
+</body>
+</html>

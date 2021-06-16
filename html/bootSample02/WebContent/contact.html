@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- 추가CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<title>Contact | 카페 Mr. M COFFEE (미스터 엠 커피)</title>
+</head>
+
+
+<body>
+<!-- 헤더ー -->
+<header class="py-4">
+  <div class="container text-center">
+    <h1><a href="index.html"><img src="img/logo.png" alt="카페 Mr. M COFFEE"></a></h1>
+  </div>
+</header>
+<!-- /헤더ー -->
+<!-- 네비게이션바-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <!-- 서브컴포넌트 -->
+  <div class="container">
+    <!-- 브렌드 -->
+    <a class="navbar-brand" href="index.html">Mr. M COFFEE</a>
+    <!-- 전환 버튼 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <!-- 네비게이션 -->
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <!-- 네비게이션메뉴ー -->
+      <!-- 왼쪽 메뉴:톱 페이지의 각 콘텐츠에 대한 링크 -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Top <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#coupon">Coupon</a>
+        </li>
+        <!-- 드롭 다운 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.html#shop">Shop</a>
+            <a class="dropdown-item" href="index.html#access">Access</a>
+          </div>
+        </li>
+      </ul>
+      <!-- 오른쪽 메뉴:Contact 페이지에 링크 -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link btn btn-info">Contact</a>
+        </li>
+      </ul>
+      <!-- /네비게이션메뉴ー -->
+    </div>
+  </div>
+  <!-- /서브컴포넌트 -->
+</nav>
+<!-- /네비게이션바-->
+<!-- 빵 목록 -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb container">
+    <li class="breadcrumb-item">
+      <a href="index.html">Top</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">
+      Contact
+    </li>
+  </ol>
+</nav>
+<!-- /빵 목록 -->
+<!-- 메인 -->
+<main>
+  <div class="container">
+    <h2>Contact</h2>
+    <p>카페 Mr. M COFFEE (미스터 엠 커피)에 대한 문의는 이 양식을 이용하십시오.</p>
+  </div>
+  <!-- 문의 양식 -->
+  <div class="py-3">
+    <div class="container">
+      <h3 class="mb-3">문의 양식</h3>
+      <!-- 폼 -->
+      <form>
+        <!-- 이름 -->
+        <div class="form-group row">
+          <label for="name" class="col-md-3 col-form-label">
+            이름<span class="badge badge-warning">필수</span>
+          </label>
+          <div class="col-md-9">
+            <input type="text" class="form-control" id="name" required>
+          </div>
+        </div>
+        <!-- 메일주소 -->
+        <div class="form-group row">
+          <label for="email" class="col-md-3 col-form-label">
+            메일주소<span class="badge badge-warning">필수</span>
+          </label>
+          <div class="col-md-9">
+            <input type="email" class="form-control" id="email" required>
+          </div>
+        </div>
+        
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-md-3">
+              Mr. M COFFEE를 알게 된 계기
+            </legend>
+            <div class="col-md-9">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="questionnaire" id="radio1" value="answer1">
+                <label class="form-check-label" for="radio1">방송</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="questionnaire" id="radio2" value="answer2">
+                <label class="form-check-label" for="radio2">네이버</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="questionnaire" id="radio3" value="answer3">
+                <label class="form-check-label" for="radio3">지인</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <!-- 종류 -->
+        <div class="form-group row">
+          <label for="category" class="col-md-3 col-form-label">
+            문의 종류<span class="badge badge-warning">필수</span>
+          </label>
+          <div class="col-md-9">
+            <select class="form-control" id="category" name="category">
+              <option value="category1">예약</option>
+              <option value="category2">위탁 판매</option>
+              <option value="category3">기타 문의</option>
+            </select>
+          </div>
+        </div>
+        <!-- 내용 -->
+        <div class="form-group row">
+          <label for="message" class="col-md-3 col-form-label">
+           문의 내용<span class="badge badge-warning">필수</span>
+          </label>
+          <div class="col-md-9">
+            <textarea class="form-control" id="message" rows="8" name="message"></textarea>
+          </div>
+        </div>
+        <!-- 확인 버튼 -->
+        <div class="form-group row justify-content-end">
+          <div class="col-md-9">
+            <button type="submit" class="btn btn-primary">확인</button>
+          </div>
+        </div>
+      </form>
+      <!-- /폼 -->
+    </div>
+  </div>
+  <!-- / 문의 양식 -->
+</main>
+<!-- /메인 -->
+<!-- 후터ー -->
+<footer class="py-4 bg-dark text-light">
+  <div class="container text-center">
+    <!-- 네비게이션 -->
+    <ul class="nav justify-content-center mb-3">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Top</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#news">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#menu">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#coupon">Coupon</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#shop">Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <!-- /네비게이션 -->
+    <p>
+      <small>Copyright &copy;2020 Mr. M COFFEE, All Rights Reserved.</small>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

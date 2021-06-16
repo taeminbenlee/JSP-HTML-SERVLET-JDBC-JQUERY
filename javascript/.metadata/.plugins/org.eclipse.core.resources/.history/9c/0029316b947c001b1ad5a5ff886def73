@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html> <!-- root tag -->
+<head> <!-- child -->
+<meta charset="UTF-8"> <!-- child of head -->
+<title>Insert title here</title>
+</head>
+<body> <!-- child tag 2 -->
+
+<!-- 
+	DOM : Document Object Model
+		    각 tag를 접근하기 위한 object
+		    그 object를 접하기 위한 함수
+	
+-->
+	<!-- childNodes -->
+	<h3 id="intro">h3 tag id intro</h3>
+	<p id="demo">p tag id demo</p>
+	
+	<button type="button" onclick="func()">버튼</button>
+<script type="text/javascript">
+function func(){
+	/* let text = document.getElementById('intro').childNodes[0].nodeValue; */
+	let text = document.getElementById('demo').childNodes[0].nodeValue;
+	
+	alert(text);
+}
+
+</script>	
+<br><br>
+<select id="cars">
+	<option>benz</option>
+	<option>bmw</option>
+	<option>volvo</option>
+</select>
+<button type="button" onclick="cars()">자동차선택</button>
+<script type="text/javascript">
+function cars() {
+	let carName = document.getElementById('cars').childNodes;
+	alert(carName[3<].text);
+}
+
+</script>
+<br><br>
+<!-- appendChild, insertChild -->
+<div id='duv1'>
+	<p id="p1">첫번째 p태그</p>
+	<p id="p2">두번째 p태그</p>
+
+
+<button type="button" onclick="appendfunc()">뒤에추가</button>
+<button type="button" onclick="insertfunc()">앞에추가</button>
+<button type="button" onclick="deletefunc()">삭제</button>
+</div>
+
+<script type="text/javascript">
+
+function appendfunc() {
+	let ptag=document.createElement('p');
+	let textNode = document.createTextNode("새로운p 태그");
+	
+	ptag.id = 'newid';
+	ptag.className = 'newclass';
+	
+	ptag.appendChild(textNode);
+	
+	let element = document.getElementById'("div1");
+	elemnt.appendChild(ptag)
+}
+function insertfunc(){
+	let h3tag= document.createElement('h3');
+	let textNode = document.creatTextNode("새로운 h3 태그");
+	
+	h3tag.appendChild(textNode);
+}
+function deletefunc(){
+	
+}
+
+
+
+</script>
+
+<!-- NodeList -->
+<p>hello</p>
+<p>world</p>
+<p>i can do it</p>
+<p>i won't change my mind</p>
+
+<button type="button" onclick="listfunc()">NodeList</button>
+<script type="text/javascript">
+function listfunc() {
+	let nodelist = document.getElementsByTagName("p");
+	alert(nodelist.length);
+	
+	nodelist[3].innerHTML = "안녕하세요";
+	for (i = 0; i < nodelist.length; i++) {
+		nodelist[i].style.backgroundColor = "#00ff00"; //번지 찾을때 쉽다
+	}
+}
+var myNodelist = document.querySelectorAll("p");
+document.getElementByTagName("p").innerHTML = myNodelist.length;
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

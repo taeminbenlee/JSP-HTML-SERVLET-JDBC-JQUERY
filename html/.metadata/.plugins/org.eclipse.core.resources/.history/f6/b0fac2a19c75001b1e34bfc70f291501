@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+	image 종류
+			jpg		png 	gif 	bmp		tiff	tga
+용량(작은순)	1		3		2		6		4		5
+압축			1						na
+							animated
+
+
+	png 	배경색->투명
+
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="background-color: blue">
+<!-- 이미지 올리기 -->
+<img alt="이미지 없음" src="./images/huk.gif">
+<br>
+<img alt="이미지 없음" src="./images/bird.png">
+<br>
+<img alt="이미지 없음" src="./images/pic.jpg">
+<br>
+
+<!-- 웹상의 모든 이미지를 가져올수있음, 이미지주소 복사 붙여넣기
+width="100" height="200" 추가하여 크기조절-->	
+<img alt="" width="800" height="1000" src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000083/83858/83858_1000.jpg">
+<br>
+
+
+
+
+
+
+</body>
+</html>

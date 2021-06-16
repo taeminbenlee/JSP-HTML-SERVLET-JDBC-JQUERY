@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>환영합니다</h1>
+<p>현재 시각은
+<input type="text" id="text" size="50">
+입니다.</p>
+
+<script type="text/javascript">
+
+
+function checkTime(i) {
+	  if (i < 10) {
+	    i = "0" + i;
+	  }
+	  return i;
+	}
+
+function displayDate() {
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+
+	m = checkTime(m);
+	s = checkTime(s);
+	document.getElementById('text').value = h + ":" + m + ":" + s;
+	setInterval("displayDate()", 1000);
+	}
+	
+
+</script>
+</body>
+</html>

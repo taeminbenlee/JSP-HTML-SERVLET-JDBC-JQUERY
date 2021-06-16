@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+h3{color: aqua;}
+p{color: aqua;}
+h1{color: aqua;}
+h2{color: aqua;}
+body{background-color: black;}
+</style>
+</head>
+<body>
+<h1 class="text-center mb-5">component: modal</h1>
+<h2 class="text-center mb-4">기본적인 사용 예</h2>
+
+<div class="container mt-3">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal 열기버튼-->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+      			<div class="modal-content">
+      			
+      						<!-- Modal Header 닫기버튼 위에 x표시로 -->
+      					<div class="modal-header">
+				          <h4 class="modal-title">Modal Heading</h4>
+				          <button type="button" class="close" data-dismiss="modal">×</button>
+				        </div>
+				        
+				      		  <!-- Modal body 내용 -->
+				        <div class="modal-body">
+				          Modal body..
+				        </div>
+				        
+				       		 <!-- Modal footer 닫기버튼 붙여주기-->
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				        </div>
+      			</div>
+      		</div>
+		</div>
+		
+		
+	<!-- Links -->
+	<a data-toggle="modal" href="#myModal">Open Modal</a>
+	
+	<!-- Other elements -->
+	<p data-toggle="modal" data-target="#myModal">Open Modal</p>
+	
+</div>
+
+
+</body>
+</html>

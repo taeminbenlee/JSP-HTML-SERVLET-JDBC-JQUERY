@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		form 
+			resource의 종류
+				textfield, button, textarea, checkbox, radio button etc...
+	<form action="">
+	<input type="submit" value="이동"> 
+	</form>
+	 -->
+	 <!-- 
+	 	<태그명 속성명="특성명: 값" || 태그명 속성명 = "값" 
+	 		  style
+	 	Attribute(속성)목적 : 표현, 접근(데이터IO)하기 위함
+	 	
+	 	<태그명 id=, class=, name=
+	 	
+	 	id : 현재 페이지에서 한개만 유효. 데이터용(자바스크립트)
+	 	class : 다중으로 사용이 가능하다. 디자인(css)
+	 	name : (다중 또는 하나의)값을 전달하는 목적. (링크)
+	 
+	  -->
+
+<p id="aaa" class="ddd" name="a1">hello</p>	  
+<p id="bbb" class="ddd" name="b1">world</p>	  
+<br>
+
+<a href="NewFile.html">NewFile.html로 이동</a>
+<br>
+
+<form action="NewFile.html">
+	NewFile.html로 이동
+	<input type="submit" value="이동"> <!-- 버튼생성 -->
+</form>
+
+<br><br><br>
+<!-- 
+textfield 
+<input type == 텍스트타입, value=""초기값 또는 사용자가 입력할값, title== 커서에 뜨는 , size== 크기, readonly==읽기전용=기입안됨, 
+placeholder== 텍스트필드에 설명 기입 
+type="password"==안보이게 해줌, type="reset" value="초기화" 초기화 버튼 생성 실행되게 하기위해선 전체를 form으로 감싸줘야함 
+-->
+<form>
+ID:<input type="text" value="" title="여기에 아이디 기입" size="10" placeholder="id기입">
+<br>
+PW:<input type="password" size="10">	  
+<br>
+초기화<input type="reset" value="초기화">
+</form>
+<br><br><br>
+<!-- html5 type 
+number max와 min 값을 넣어서 넘버의 오르내림 설정 가능
+date: 날짜 달력
+color: 컬러의 파레트 나옴
+range: 슬라이드바
+search: 내부 검색창
+-->
+number:<input type="number" max="5" min="1">
+<br>
+date:<input type="date">
+<br>
+color:<input type="color" value="#ff0000">
+<br>
+range:<input type="range" max="10" min="0">
+<br>
+search:<input type="search">
+<br><br><br>
+<!-- checkbox, radio button -->
+checkbox & radio button<br>
+<input type="checkbox" value="패션"> 패션<br>
+<input type="checkbox" value="음악"> 음악<br>
+<input type="checkbox" value="게임"> 게임<br>
+<br>
+
+<input type="radio" name="car" value="벤츠" checked="checked">벤츠<br>
+<input type="radio" name="car" value="아우디">아우디<br>
+<input type="radio" name="car" value="bmw">BMW<br>
+<br><br>
+<!-- textarea -->
+<textarea rows="10" cols="30">기본값</textarea>
+<br><br>
+<!--  select -->
+<select multiple="multiple">
+	<option value="사과">apple</option>
+	<option value="배">pear</option>
+	<option value="바나나">banana</option>
+	<option value="포도">grape</option>
+</select>
+
+</body>
+</html>

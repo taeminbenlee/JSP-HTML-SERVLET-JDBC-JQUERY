@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	background: url(back.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+div{width: 90%; height: 20%; background-color: gray; opacity: 0.5; padding: 1%;}
+p{font-size: 10px;}
+</style>
+</head>
+<body>
+<div>
+	<p>Bit Camp에 오신 것을 환영합니다</p>
+
+</div>
+</body>
+</html>

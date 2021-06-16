@@ -1,0 +1,44 @@
+<%@page import="Dto.MemberDto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자유글 작성</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <style type="text/css">
+#text1{width:100%; height:100%; float: center; margin-top: 200px; 
+		font-family: 'Nanum Pen Script', cursive; font-size: 20px;}
+.utill2{float: center;}
+
+.location{color: aqua;}
+
+
+#leftScr{width:20%; height:100%; float: left; margin-top: 300px;}
+#rightScr{width: 80%; height: 100%; float: left;}
+</style>
+</head>
+<%
+request.setCharacterEncoding("utf-8");
+Object ologin = request.getSession().getAttribute("login");
+MemberDto mem = null;
+
+if(ologin == null){
+	
+	response.sendRedirect("login.jsp");
+}
+mem = (MemberDto)ologin;	
+%>
+<body>
+<div id="leftScr">
+<img alt="" src="./gif/dobey.gif" style="max-height: 500px; max-width: 500px; margin-left: 150px;">
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>2개의 주사위</h2><br>
+<p>버튼을 클릭하면 2개의 주사위가 랜덤됩니다.</p>
+<br><br>
+<input type="button" id="diceRoll" onclick="roll()" value="주사위를 굴린다">
+
+
+<script type="text/javascript">
+function roll(){
+	var diceRoll = Math.floor( Math.random() * 6 ) +1;
+	alert('You rolled a ' + diceRoll);
+}
+
+</script>
+</body>
+</html>

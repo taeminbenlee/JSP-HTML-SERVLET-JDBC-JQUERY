@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		form 
+			resource의 종류
+				textfield, button, textarea, checkbox, radio button etc...
+	<form action="">
+	<input type="submit" value="이동"> 
+	</form>
+	 -->
+	 <!-- 
+	 	<태그명 속성명="특성명: 값" || 태그명 속성명 = "값" 
+	 		  style
+	 	Attribute(속성)목적 : 표현, 접근(데이터IO)하기 위함
+	 	
+	 	<태그명 id=, class=, name=
+	 	
+	 	id : 현재 페이지에서 한개만 유효. 데이터용(자바스크립트)
+	 	class : 다중으로 사용이 가능하다. 디자인(css)
+	 	name : (다중 또는 하나의)값을 전달하는 목적. (링크)
+	 
+	  -->
+
+<p id="aaa" class="ddd" name="a1">hello</p>	  
+<p id="bbb" class="ddd" name="b1">world</p>	  
+<br>
+
+<a href="NewFile.html">NewFile.html로 이동</a>
+<br>
+
+<form action="NewFile.html">
+	NewFile.html로 이동
+	<input type="submit" value="이동"> <!-- 버튼생성 -->
+</form>
+
+<br><br><br>
+<!-- textfield -->
+ID:<input type="text" value="여기에 기입">
+	  
+</body>
+</html>

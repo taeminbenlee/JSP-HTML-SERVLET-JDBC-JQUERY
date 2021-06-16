@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<!-- radio -->
+<ul>
+	<li><input type="radio" name="radioTest" value="사과" checked>사과</li>
+	<li><input type="radio" name="radioTest" value="바나나">바나나</li>
+	<li><input type="radio" name="radioTest" value="망고">망고</li>
+</ul>
+
+<button type="button" id="choice">선택</button>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#choice").click(function() {
+		// getter
+		var radioVal = $("input[name = 'radioTest']:checked").val();
+		alert(radioVal);
+		// setter
+		$("input[name = 'radioTest']").val(["바나나"]);
+	});
+});
+
+</script>
+
+<!-- checkbox (독립적이라 각각의 id로 잡는다)-->
+<input type="checkbox" id="ch">그림그리기
+<br><br>
+<button type="button" id="btn">체크</button>
+<script type="text/javascript">
+$(function () {
+	
+	$("#btn").click(function () {
+
+	//getter
+	let check = $("#ch").is(":checked");
+	let check = $("input:checkbox[id='ch']").is(":checked");
+	alert("check: "+ check);
+	//setter
+	
+	});
+});
+</script>
+
+</body>
+</html>

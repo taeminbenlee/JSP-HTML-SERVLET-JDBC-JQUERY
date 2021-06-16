@@ -1,0 +1,62 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import cls.insertClass;
+import db.DBConnection;
+import dto.accountDto;
+
+// Singleton 
+public class AccountDao {	// DB와 대화하는 클래스
+		private static AccountDao dao = null;
+		
+		private AccountDao() {
+			
+		}
+		
+		public static AccountDao getInstance() {
+			if(dao==null) {
+				dao = new AccountDao();
+			}
+			return dao;
+		}
+		Scanner sc = new Scanner(System.in);
+		public void insert() {
+			
+			String str = null;
+			accountDto dto = new accountDto();
+			System.out.print("dateTime: ");
+			str=sc.next();
+			dto.setDateTime(str);
+			System.out.print("title: ");
+			String title = sc.next();
+			dto.settitle(title);
+			System.out.print("classify: ");
+			String classify = sc.next();
+			dto.setClassify(classify);
+			System.out.print("money: ");
+			int money =sc.nextInt();
+			dto.setMoney(money);
+			System.out.print("memo: ");
+			String memo = sc.next();
+			dto.setMemo(memo);
+			insertClass ic = new insertClass();
+			ic.insert(dto);
+			
+		}
+		
+		
+		
+		public void delete() {
+			
+		}
+		
+		public void select() {
+			
+		}
+		
+}

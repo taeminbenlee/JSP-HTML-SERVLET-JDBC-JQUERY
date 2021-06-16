@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+
+<p id="demo"></p>
+<br>
+<button type="button">클릭</button>
+
+
+
+<script type="text/javascript">
+$(function(){
+	
+	$("button").click(function(){
+		
+		$.ajax({
+			url:"data.jsp",
+			dataType: "xml",
+			success: function(xml) {
+                $(xml).find('xmldata').each(function(){
+                    $(this).find("news").each(function(){
+                        //var values = $(this).text();
+                        //alert(values);
+                        $("#demo").append($(this).find("aname").text() + "<br>");
+                        $("#demo").append($(this).find("link").text() + "<br>");
+                        $("#demo").append($(this).find("target").text() + "<br>");
+                    });
+                });
+            }
+		})
+		
+		
+		
+	})
+	
+
+	
+})
+
+
+
+
+</script>
+</body>
+</html>

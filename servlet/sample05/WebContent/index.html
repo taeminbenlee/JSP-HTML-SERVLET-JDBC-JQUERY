@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h3>Redirect 설정</h3>
+<!-- 
+
+	web
+		html
+		<a href = "(hello.html),(http://)"
+		<form action -> submit
+
+		Java Script
+		location.href = 
+		
+	Java
+		sendRedirect
+		forward	
+		
+		web front에서  input(입력) -> back로 Java(jsp, servlet)
+											DB
+											이동-> front
+										
+				진행순서
+				front - back - front
+				
+			(front)	-> (front)			->	(back)	-> (front) -> (back)
+			loginPage -> accountPage 	-> 회원등록	-> loginPage -> 회원확인
+				(<a href=""> or <button>) 	(dao,DB)				(DB)
+				
+ -->
+<!-- index.html -> Servlet -> web.com -->
+
+<form action="hello" method="post">
+<select name="url">
+	<option value="naver">네이버</option>
+	<option value="daum">다음</option>
+	
+</select>
+<input type="submit" value="post송신">
+
+</form>
+
+<br><br>
+
+<form action="world" method="get">
+<select name="url">
+	<option value="naver">네이버</option>
+	<option value="daum">다음</option>
+	
+</select>
+<input type="submit" value="get송신">
+
+
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#header{}
+#tbsty{border: 2px solid teal; }
+th{font-weight: bold}
+
+</style>
+</head>
+<body>
+<div id=header>
+	<table id=tbsty>
+		<tr align="center" >
+			<th>분류</th><th>제품</th><th>설명</th>
+			
+		</tr>
+		<tr>
+			<td rowspan="2">과일</td><td>사과</td><td>쌍덕잎식물 장미목 장미과 낙엽교목 식물인 사과나무의 열매</td>
+		</tr>
+		<tr>
+			<td>굴</td><td>겨울철 비타민의 보고 귤</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

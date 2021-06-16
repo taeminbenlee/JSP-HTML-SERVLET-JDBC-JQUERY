@@ -1,0 +1,10 @@
+package jdbc;
+
+public class AccountBook {
+	
+	public int insertData(String dateTime, String use, String classify, int money, String memo) {
+		String sql = " INSERT INTO USERTEST(ID, NAME, AGE, JOINDATE) "
+				+ " VALUES('"+ id + "','" + name + "'," + age + ", SYSDATE )";
+		System.out.println(sql);
+	}
+}

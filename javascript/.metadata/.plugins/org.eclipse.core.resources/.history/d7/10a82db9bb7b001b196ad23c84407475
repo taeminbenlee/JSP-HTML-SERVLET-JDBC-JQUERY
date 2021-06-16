@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p id="demo">p tag</p>
+
+<h3 id="h3">최근 SNS 상에 '#사장님힘내세요' 해시태그를 달고 수기로 직접 이 같은 응원문구를 쓴 영수증 사진이 줄지어 올라오고 있다. 코로나 때문에 사정이 어려워진 동네 가게의 음식을 주문하고 영수증과 인증 사진을 찍어 자영업자들을 응원하는 운동이 벌어진 것이다.</h3>
+
+<script type="text/javascript">
+//위의 문자열 가져오기
+let str = document.getElementById("h3").innerHTML;
+//가져왔는지 alert로 확인
+//alert(str);
+
+//string(javascript) 
+//문자의 위치 찾기
+let pos = str.indexOf("최");
+//문자열의 위치 찾기
+pos = str.search("사장님");
+//3번지 부터 6번지 전까지의 문자열 가져오기
+pos = str.slice(3, 6);
+//섞어서 쓰는것
+let mystr = "해시태그";
+pos = str.search("사장님");
+str.slice(str.search(mystr), pos, pos+str.length+1);
+//substring함수사용
+pos = str.substring(3, 6);
+//결과 확인
+document.getElementById("demo").innerHTML = pos;
+
+//문자열 비교
+//문자열 선언
+let str1, str2;
+str1 = "hello";
+str2 = 'hell';
+
+str2 = str2 + "o";
+//alert(str2);
+if(str1 == str2){
+	alert("같은문자열입니다");
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

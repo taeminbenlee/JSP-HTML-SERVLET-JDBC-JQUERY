@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#demo{background-color: ivory; color: maroon; text-align: center; border-style: dotted; border-color: olive;
+		font-family: Times; font-style: inherit; font-size: 24pt; margin-top: 20px; padding-top: 20px;}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<div id="demo">Hello CSS World</div>
+
+
+
+
+
+</body>
+</html>

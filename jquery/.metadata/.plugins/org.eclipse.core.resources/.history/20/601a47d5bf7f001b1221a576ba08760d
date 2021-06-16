@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+<button type="button">실행</button>
+
+<p id="q01">hello jquery</p>
+<p id="q01">hello jquery</p>
+<script type="text/javascript">
+$("button").click(function () {
+	// font color
+	$("#q01").css("color", "#ff0000");
+});
+
+</script>
+</body>
+</html>

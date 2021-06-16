@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<br>
+<input type="text" id="text" size="50">
+
+<script type="text/javascript">
+//Date라는 클래스활용
+function displayDate() {
+	document.getElementById('demo').innerHTML = Date();
+	document.getElementById('text').value = Date();
+}
+
+//displayDate();
+//타이머 1000은 1초 즉 1초마다 지나는 시간의 흐름을 표시해줌
+setInterval("displayDate()", 1000);
+
+</script>
+<br><br>
+
+<p id="date"></p>
+
+<script type="text/javascript">
+
+let d = new Date();
+
+
+//셋팅 setter
+d = new Date(2021, 6 - 1, 23, 6, 20, 13, 0);
+d = new Date("October 12, 2021 12:32:35");
+
+document.getElementById("date").innerHTML = d; //전체 날짜 + 시간
+/*
+document.getElementById("date").innerHTML = d.getDay(); //요일
+document.getElementById("date").innerHTML = d.getFullYear(); //년도
+document.getElementById("date").innerHTML = d.getMonth() + 1; // 월/ 여기서도 0월부터 시작이기때문에 +1
+document.getElementById("date").innerHTML = d.getDate(); // 날짜
+document.getElementById("date").innerHTML = d.getHours(); //시간
+document.getElementById("date").innerHTML = d.getMinutes();
+document.getElementById("date").innerHTML = d.getSeconds();
+*/
+
+
+
+
+</script>
+
+
+</body>
+</html>

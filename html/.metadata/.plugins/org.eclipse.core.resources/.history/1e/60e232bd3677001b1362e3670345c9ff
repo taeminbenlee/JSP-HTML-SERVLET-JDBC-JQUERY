@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#fullScr{width: 800px;height: 500px;margin: auto;}
+#header{width: 800px;height: 100px;background-color: #998000;float: left;}
+#mainScr{width: 600px;height: 200px;background-color: #7F9900;}
+#box1{width: 300px;height: 120px;background-color: orange;}
+#box2{width: 300px;height: 120px;background-color: purple;}
+#footer{width: 780;height: 80px;border: 2px dotted black;background-color: #79D5FF; padding-top: 10px;}
+
+</style>
+
+</head>
+<body>
+<div align="center">
+<div id=fullScr>
+	<div id=header align="left">
+	header 영역
+	</div>
+	<div id=mainScr align="left">
+	main 영역
+		<div id=box1 align="left">
+		box 1
+		</div>
+		<div id=box2 align="left">
+		box 2
+		</div>
+	</div>
+	<div id=footer align="left">
+	footer 영역
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

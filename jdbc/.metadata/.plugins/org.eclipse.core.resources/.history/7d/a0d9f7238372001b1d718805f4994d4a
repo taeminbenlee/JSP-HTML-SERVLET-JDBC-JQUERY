@@ -1,0 +1,110 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import db.DBClose;
+import db.DBConnection;
+import dto.UserDto;
+
+public class SelectTest {
+//============================================================================================================//
+	// 1. 1개의 데이터를 취득
+	//하나의 데이터를 취득하니깐 어잿든 UserDto를 리턴
+	public UserDto search(String id) {
+	//1. query작업
+		String sql = " SELECT ID, NAME, AGE, JOINDATE "
+				+ " FROM USERTEST "
+				+ " WHERE ID = '" + id + "' ";
+		
+		
+		System.out.println(sql); // 확인용 으로 직어놓자
+	//2 데이터 연결	
+		Connection conn = DBConnection.getConnection();
+		Statement stmt = null;
+		ResultSet rs = null; //db로부터 결과를 return받는 값
+		
+		UserDto dto = null;
+	//2.1 데이터 프로세스 stmt = conn.createStatement(); 에 try catch	
+		try {
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			if(rs.next()) { 	//true일경우 데이터가 있는경우
+	//2.2 데이터를 받아오는 절차
+				String userid = rs.getString("id"); //db로부터 넘어온 데이터를 스트링으로 변환하여 id라는 컬럼값을 받는다
+				String username = rs.getString("name"); 
+				int userage = rs.getInt("age");
+				String userjoindate = rs.getString("joindate");
+	//2.3 받아온 데이터를 dto에 넣어준다
+				dto = new UserDto(userid, username, userage, userjoindate); 
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+	//3. close db
+		} finally {
+			DBClose.close(conn, stmt, rs);
+		}
+		return dto;
+		
+	}
+//============================================================================================================//
+	
+	//다른방법
+	public UserDto select(String id) {
+		//1.1 query작업
+				String sql = " SELECT ID, NAME, AGE, JOINDATE "
+						+ " FROM USERTEST "
+						+ " WHERE ID = ? "; //?을 넣어준다.. 이것은 우리가 넣는다는뜻?
+				
+				System.out.println(sql); // 확인용 으로 직어놓자
+		//2. 데이터 연결
+			Connection conn = DBConnection.getConnection();
+			PreparedStatement psmt = null;
+			ResultSet rs = null;
+			
+			UserDto dto = null;
+		//3. 데이터 받아오기	
+			try {
+				psmt = conn.prepareStatement(sql);
+				psmt.setString(1, id); //?표시중 1번째 ?표에 뒤에 id값을 넣어라 라는것 만약 물음표가 ??두개라면 (2, id)
+				
+				rs = psmt.executeQuery(); //preparedstatement에서는 쿼리 안에 아무것도 안넣는다
+				
+				if(rs.next()) {
+					String userid = rs.getString("id");
+					String username = rs.getString("name");
+					int userage = rs.getInt("age");
+					String userjoindate = rs.getString("joindate");
+					
+					dto = new UserDto(userid, username, userage, userjoindate);
+				}
+				
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+				DBClose.close(conn, psmt, rs);
+			}
+		
+			return dto;
+				
+				
+				
+				
+				
+				
+	}
+	
+	
+	
+	
+	
+	
+}

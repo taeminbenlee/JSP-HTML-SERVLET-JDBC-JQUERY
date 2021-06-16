@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+
+<p>The jQuery .class selector finds elements with a specific class.</p>
+<p>followed by the name of the class:</p>
+
+<button type="button" id="append">추가(뒤)</button>
+<button type="button" id="prepend">추가(앞)</button>
+<script type="text/javascript">
+$(function () {
+	// p tag 추가
+	$('#append').click(function name() {
+		$('p').append("<br>append 추가 요소 입니다.")
+		
+	});
+	
+	$('#prepend').click(function name() {
+		$('p').prepend("prepend 추가 요소 입니다.")
+	});
+	
+	
+});
+
+</script>
+
+
+
+</body>
+</html>
